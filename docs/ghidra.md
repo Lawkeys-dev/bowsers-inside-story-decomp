@@ -25,10 +25,14 @@ with the `dsd` config in `config/`. It runs natively on macOS (Apple Silicon), n
 ## Load the game
 
 1. Create a project: **File → New Project → Non-Shared Project**, outside of this repository (e.g. `~/ghidra-projects/bis`).
-2. Drag `extract/baserom_bis_usa.nds` into the project window and follow the steps of the DS loader.
-3. **When Ghidra offers to auto-analyze the program, answer No.** The `dsd` sync gives more accurate function boundaries.
-4. Open the program, then **Window → Script Manager**, search for `SyncDsd.java` and run it. Select
-   `config/usa/arm9/config.yaml` in this repository. Tick the "In Tool" checkbox to add the script to the toolbar.
+2. **File → Import File…** (or drag and drop) and select `extract/baserom_bis_usa.nds`. In the import dialog, the format must be
+   **dsd-ghidra-loader** with language `ARM:LE:32:v5t`. If it shows "Raw Binary", the extension isn't installed.
+3. When asked "Which CPU program do you want to load?", choose **ARM9** (the game code; ARM7 is the sound/Wi-Fi CPU).
+4. Double-click the imported program to open it. **When Ghidra offers to analyze it, answer No.** The `dsd` sync gives more
+   accurate function boundaries.
+5. **Window → Script Manager**, search for `SyncDsd`, and run it (double-click). Select `config/usa/arm9/config.yaml` in this
+   repository. Tick the "In Tool" checkbox to add the script to the toolbar.
+6. Save the program (<kbd>Cmd</kbd>+<kbd>S</kbd>).
 
 Run the sync again whenever `config/` changes (new symbol names, new delinked files).
 
