@@ -47,14 +47,15 @@ the secure area CRC in the header can't be computed, so the rebuilt ROM differs 
 Other useful targets: `ninja report` (progress report for decomp.dev), `ninja dis` (disassembly in `build/usa/asm/`),
 `ninja apply` (copy symbol names from the built ELF back to `config/`).
 
-### Compiler version
+### Compiler
 
-The compiler version and flags are not confirmed yet. The starting point is the setup of
-[Mario & Luigi: Partners in Time](https://github.com/Rainchus/PartnersInTime-Decomp) (same developer): `mwccarm` 1.2/base.
-To try another version:
+The game was built with CodeWarrior for Nintendo DS 2.0 (`mwccarm` 2.0/sp1p5, `-O4,p`), in C++.
+See [docs/compiler.md](docs/compiler.md) for how it was identified.
+
+To test a function against every compiler version:
 
 ```shell
-./dev.sh python tools/configure.py usa --mwcc-version 2.0/sp1p5
+./dev.sh python tools/probe_compilers.py path/to/file.cpp
 ```
 
 ## Project structure

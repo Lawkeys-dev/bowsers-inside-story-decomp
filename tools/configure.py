@@ -20,7 +20,7 @@ parser.add_argument('-w', type=str, default=DEFAULT_WIBO_PATH, dest="wine", requ
 parser.add_argument("--compiler", type=Path, required=False, help="Path to pre-installed compiler root directory")
 parser.add_argument("--no-extract", action="store_true", help="Skip extract step")
 parser.add_argument("--dsd", type=Path, required=False, help="Path to pre-installed dsd CLI")
-parser.add_argument("--mwcc-version", type=str, default="1.2/base", help="Compiler version under tools/mwccarm/, e.g. 1.2/base or 2.0/sp1p5")
+parser.add_argument("--mwcc-version", type=str, default="2.0/sp1p5", help="Compiler version under tools/mwccarm/, e.g. 2.0/sp1p5 (see docs/compiler.md)")
 parser.add_argument('version', help='Game version')
 args = parser.parse_args()
 
@@ -31,13 +31,13 @@ DSD_VERSION = 'v0.12.1'
 WIBO_VERSION = '0.6.16'
 SJISWRAP_VERSION = 'v1.2.2'
 OBJDIFF_VERSION = 'v3.8.2'
-# Starting hypothesis taken from Mario & Luigi: Partners in Time (same developer), still to be confirmed for BIS.
+# CodeWarrior 2.0: see docs/compiler.md. The 2.0 service packs produced identical code on every function tested so far.
 MWCC_VERSION = args.mwcc_version
 DECOMP_ME_COMPILERS = {
     "1.2/base": "mwcc_20_72",
     "2.0/sp1p5": "mwcc_30_131",
 }
-DECOMP_ME_COMPILER = DECOMP_ME_COMPILERS.get(MWCC_VERSION, "mwcc_20_72")
+DECOMP_ME_COMPILER = DECOMP_ME_COMPILERS.get(MWCC_VERSION, "mwcc_30_131")
 CC_FLAGS = " ".join([
     "-O4,p",                # Optimize maximally for performance
     "-enum min",            # Use smallest possible enum size (as in Partners in Time)
