@@ -608,7 +608,7 @@ from:0x020944bc kind:load to:0x0205c268 module:main
 from:0x020944c0 kind:load to:0x0205c230 module:main
 from:0x020945b0 kind:arm_call to:0x0206a048 module:overlay(3)
 from:0x020945ec kind:arm_call to:0x0201c1f8 module:main
-from:0x02094680 kind:load to:0x0205b7f8 module:main
+from:0x02094680 kind:load to:0x0205b7f0 add:0x8 module:main
 from:0x02094684 kind:load to:0x0205b7f0 module:main
 from:0x02094688 kind:load to:0x0210fda8 module:overlay(4)
 from:0x0209468c kind:load to:0x0210cc48 module:overlay(4)
