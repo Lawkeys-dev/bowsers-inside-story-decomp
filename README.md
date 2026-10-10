@@ -9,11 +9,11 @@ through matching decompilation: the C/C++ code in this repository compiles back 
 ## Status
 
 The game is delinked and linked back into byte-identical modules (ARM9 main, ITCM, DTCM and all 141 overlays).
-The first functions are decompiled and built from C++.
+20 overlays are fully decompiled, including overlay 002 (a double-ended heap allocator).
 
 | Version | Game code | SHA-1 | Status |
 | ------- | --------- | ----- | ------ |
-| USA     | `CLJE`    | `099b07d55c43601c4866d475032ab9431356cc5d` | All modules rebuild, 6 / 12,221 functions decompiled |
+| USA     | `CLJE`    | `099b07d55c43601c4866d475032ab9431356cc5d` | All modules rebuild, 30 / 12,221 functions decompiled, 20 / 141 overlays complete |
 
 ## Requirements
 
@@ -61,6 +61,7 @@ To test a function against every compiler version:
 ## Contributing
 
 - [docs/decompiling.md](docs/decompiling.md): how to decompile a function
+- [CLAUDE.md](CLAUDE.md): workflow and rules for AI agents (`tools/decomp.py`)
 - [docs/ghidra.md](docs/ghidra.md): Ghidra setup with `dsd-ghidra`
 - [docs/compiler.md](docs/compiler.md): how the compiler was identified
 
