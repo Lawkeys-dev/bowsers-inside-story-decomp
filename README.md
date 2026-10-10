@@ -1,5 +1,16 @@
 Mario & Luigi: Bowser's Inside Story
+[![Build Status]][actions] [![Code]][progress] [![Complete]][progress]
 =============
+
+[Build Status]: https://github.com/istornz/bowsers-inside-story-decomp/actions/workflows/build.yml/badge.svg
+[actions]: https://github.com/istornz/bowsers-inside-story-decomp/actions/workflows/build.yml
+[Code]: https://decomp.dev/istornz/bowsers-inside-story-decomp/usa.svg?mode=shield&measure=code&label=Code
+[Complete]: https://decomp.dev/istornz/bowsers-inside-story-decomp/usa.svg?mode=shield&measure=complete_code_percent&label=Linked
+[progress]: https://decomp.dev/istornz/bowsers-inside-story-decomp
+
+<!-- markdownlint-disable MD033 -->
+[<img src="https://decomp.dev/istornz/bowsers-inside-story-decomp.svg?w=512&h=256" width="512" height="256" alt="Progress map">][progress]
+<!-- markdownlint-enable MD033 -->
 
 **Work in progress!** This project aims to recreate source code for ***Mario & Luigi: Bowser's Inside Story*** (Nintendo DS, 2009)
 through matching decompilation: the C/C++ code in this repository compiles back to a byte-identical copy of the original game code.
