@@ -1,0 +1,72 @@
+Mario & Luigi: Bowser's Inside Story
+=============
+
+**Work in progress!** This project aims to recreate source code for ***Mario & Luigi: Bowser's Inside Story*** (Nintendo DS, 2009)
+through matching decompilation: the C/C++ code in this repository compiles back to a byte-identical copy of the original game code.
+
+**The repository does not contain any game assets or code from the ROM.** To build it, you need your own dump of the game.
+
+## Status
+
+The build system is in place: the game is delinked and linked back into byte-identical modules
+(ARM9 main, ITCM, DTCM and all 141 overlays). No code has been decompiled yet.
+
+| Version | Game code | SHA-1 | Status |
+| ------- | --------- | ----- | ------ |
+| USA     | `CLJE`    | `099b07d55c43601c4866d475032ab9431356cc5d` | All modules rebuild, 0 / 12,221 functions decompiled |
+
+## Requirements
+
+The toolchain ([`dsd`](https://github.com/AetiasHax/ds-decomp), [`objdiff`](https://github.com/encounter/objdiff),
+the Metrowerks `mwccarm` compiler run through [`wibo`](https://github.com/decompals/wibo)) targets Linux/Windows x86-64.
+A Docker image is provided so the project also builds on macOS, including Apple Silicon.
+
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/), with "Use Rosetta for x86_64/amd64 emulation" enabled on Apple Silicon
+- Your own dump of the game
+
+`./dev.sh` runs any command inside the build container with the repository mounted at `/work`. Without arguments it opens a shell.
+
+## Setup
+
+1. Put your ROM in [`extract/`](extract/README.md) (any file name ending in `.nds`).
+2. Optional, only needed to rebuild a fully identical `.nds` file: put your ARM7 BIOS dump in the repository root as `arm7_bios.bin`.
+3. Download the toolchain, extract the ROM and generate the `dsd` config:
+   ```shell
+   ./dev.sh python tools/bootstrap.py
+   ```
+4. Generate the build script and build:
+   ```shell
+   ./dev.sh python tools/configure.py usa
+   ./dev.sh ninja
+   ```
+
+The default `ninja` target delinks the game, links it back, verifies every module byte for byte (`check`), rebuilds the ROM
+and generates `objdiff.json`. When `arm7_bios.bin` is present, it also checks the SHA-1 of the whole ROM (`sha1`): without the BIOS,
+the secure area CRC in the header can't be computed, so the rebuilt ROM differs from the original by 4 header bytes only.
+
+Other useful targets: `ninja report` (progress report for decomp.dev), `ninja dis` (disassembly in `build/usa/asm/`),
+`ninja apply` (copy symbol names from the built ELF back to `config/`).
+
+### Compiler version
+
+The compiler version and flags are not confirmed yet. The starting point is the setup of
+[Mario & Luigi: Partners in Time](https://github.com/Rainchus/PartnersInTime-Decomp) (same developer): `mwccarm` 1.2/base.
+To try another version:
+
+```shell
+./dev.sh python tools/configure.py usa --mwcc-version 2.0/sp1p5
+```
+
+## Project structure
+
+- `config/`: `dsd` configuration (symbols, relocations, delinks), committed
+- `extract/`: your ROM and its extracted files, **never committed**
+- `include/`, `src/`, `libs/`: decompiled headers and source code (game code and libraries)
+- `tools/`: build scripts
+- `build/`: build output
+
+## Credits
+
+Build scripts adapted from [zeldaret/ph](https://github.com/zeldaret/ph) (CC0). Thanks to the
+[DS decompilation community](https://github.com/AetiasHax/ds-decomp), [MnL-Modding](https://github.com/MnL-Modding)
+and the authors of the [Partners in Time](https://github.com/Rainchus/PartnersInTime-Decomp) decompilation.
