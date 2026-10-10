@@ -65,6 +65,11 @@ To try another version:
 - `tools/`: build scripts
 - `build/`: build output
 
+## License
+
+The code in this repository is released under [CC0 1.0](LICENSE). It does not cover the game itself,
+which remains the property of its owners.
+
 ## Credits
 
 Build scripts adapted from [zeldaret/ph](https://github.com/zeldaret/ph) (CC0). Thanks to the
