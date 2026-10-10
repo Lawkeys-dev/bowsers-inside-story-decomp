@@ -5,7 +5,7 @@
 #   ./dev.sh ninja
 set -euo pipefail
 
-IMAGE="bis-decomp-dev"
+IMAGE="bowsers-inside-story-decomp-dev"
 cd "$(dirname "$0")"
 
 docker build --quiet --platform linux/amd64 -t "$IMAGE" . >/dev/null
