@@ -64,6 +64,7 @@ To test a function against every compiler version:
 - [CLAUDE.md](CLAUDE.md): workflow and rules for AI agents (`tools/decomp.py`)
 - [docs/ghidra.md](docs/ghidra.md): Ghidra setup with `dsd-ghidra`
 - [docs/compiler.md](docs/compiler.md): how the compiler was identified
+- [docs/ci.md](docs/ci.md): CI build and decomp.dev progress tracking
 
 ## Project structure
 

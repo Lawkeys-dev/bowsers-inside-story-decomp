@@ -1,0 +1,43 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: read
+    container:
+      # Private image with the extracted game files, see docs/ci.md
+      image: ghcr.io/istornz/bowsers-inside-story-decomp-build:main
+      credentials:
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+    strategy:
+      fail-fast: false
+      matrix:
+        version: [usa]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare
+        run: cp -R /extract/${{ matrix.version }} extract/${{ matrix.version }}
+
+      - name: Build
+        run: |
+          python tools/configure.py ${{ matrix.version }} --no-extract
+          ninja
+          ninja report
+
+      - name: Upload report
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.version }}_report
+          path: build/${{ matrix.version }}/report.json
