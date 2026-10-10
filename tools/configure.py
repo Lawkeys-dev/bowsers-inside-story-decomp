@@ -78,7 +78,8 @@ DSD_OBJDIFF_ARGS = " ".join([
     "--scratch",                        # Metadata for creating decomp.me scratches
     f"--compiler {DECOMP_ME_COMPILER}", # decomp.me compiler name
     f'--c-flags "{CC_FLAGS} -lang=c++"',# decomp.me compiler flags
-    "--custom-make ninja",              # Command for rebuilding files
+    "--custom-make ./dev.sh",           # objdiff runs on the host, so rebuild through the container
+    "--custom-args ninja",
 ])
 DSD_BASE_FLAGS = " ".join([
     "--force-color", # Force color output
@@ -289,7 +290,7 @@ def main():
         mwcc_implicit = [CC, SJISWRAP]
         if platform.system != "windows":
             transform_dep = "tools/transform_dep.py"
-            mwcc_cmd += f" && $python {transform_dep} $basefile.d $basefile.d"
+            mwcc_cmd += f" && {PYTHON} {transform_dep} $basefile.d $basefile.d"
             mwcc_implicit.append(transform_dep)
             if WINE == DEFAULT_WIBO_PATH:
                 mwcc_implicit.append(WINE)
