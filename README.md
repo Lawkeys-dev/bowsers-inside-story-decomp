@@ -8,12 +8,12 @@ through matching decompilation: the C/C++ code in this repository compiles back 
 
 ## Status
 
-The build system is in place: the game is delinked and linked back into byte-identical modules
-(ARM9 main, ITCM, DTCM and all 141 overlays). No code has been decompiled yet.
+The game is delinked and linked back into byte-identical modules (ARM9 main, ITCM, DTCM and all 141 overlays).
+The first functions are decompiled and built from C++.
 
 | Version | Game code | SHA-1 | Status |
 | ------- | --------- | ----- | ------ |
-| USA     | `CLJE`    | `099b07d55c43601c4866d475032ab9431356cc5d` | All modules rebuild, 0 / 12,221 functions decompiled |
+| USA     | `CLJE`    | `099b07d55c43601c4866d475032ab9431356cc5d` | All modules rebuild, 6 / 12,221 functions decompiled |
 
 ## Requirements
 
@@ -57,6 +57,12 @@ To test a function against every compiler version:
 ```shell
 ./dev.sh python tools/probe_compilers.py path/to/file.cpp
 ```
+
+## Contributing
+
+- [docs/decompiling.md](docs/decompiling.md): how to decompile a function
+- [docs/ghidra.md](docs/ghidra.md): Ghidra setup with `dsd-ghidra`
+- [docs/compiler.md](docs/compiler.md): how the compiler was identified
 
 ## Project structure
 
