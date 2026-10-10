@@ -26,6 +26,17 @@ Matching decompilation of Mario & Luigi: Bowser's Inside Story (Nintendo DS, USA
 3. `complete` the file. It verifies every function, marks the file `complete` and rebuilds the whole game: if any module stops
    matching, it reverts. Several files can be completed with a single build: `complete a.cpp b.cpp ...`.
 
+`new` takes several functions at once (`new func_a func_b`, one file each). `info` and `diff` never run ninja: several agents
+can use them at the same time, each on its own source file. `new`, `complete` and `ninja` change shared state: run them only
+when no other agent is working.
+
+## Decompilation sessions
+
+"Lance une session de décompilation sur ov001" (or `/decomp-session ov001`) runs the `decomp-session` skill
+(`.claude/skills/decomp-session/`): a Sonnet orchestrator prepares the module, gives each function to a Haiku
+`decomp-function` agent (`.claude/agents/`), 5 at most at the same time, verifies every result with its own `diff` and
+completes only the functions that match at 100%.
+
 ## Rules
 
 - **Never edit** `tools/configure.py`, compiler flags, `dev.sh`, `Dockerfile`, or anything under `extract/` and `build/`.

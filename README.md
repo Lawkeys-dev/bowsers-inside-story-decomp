@@ -73,6 +73,8 @@ To test a function against every compiler version:
 
 - [docs/decompiling.md](docs/decompiling.md): how to decompile a function
 - [CLAUDE.md](CLAUDE.md): workflow and rules for AI agents (`tools/decomp.py`)
+- [Decompilation sessions](.claude/skills/decomp-session/SKILL.md): a Sonnet orchestrator and up to 5 Haiku
+  [agents](.claude/agents/decomp-function.md) decompile a whole module in parallel
 - [docs/ghidra.md](docs/ghidra.md): Ghidra setup with `dsd-ghidra`
 - [docs/compiler.md](docs/compiler.md): how the compiler was identified
 - [docs/ci.md](docs/ci.md): CI build and decomp.dev progress tracking

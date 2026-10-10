@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./dev.sh python tools/decomp.py *)",
+      "Bash(./dev.sh ninja)",
+      "Bash(git status *)",
+      "Bash(git diff *)",
+      "Edit(/src/**)"
+    ]
+  }
+}

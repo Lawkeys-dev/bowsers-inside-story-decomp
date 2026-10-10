@@ -3,10 +3,12 @@
 ###
 # Helper for decompiling functions one at a time, made to be driven by a human or an AI agent.
 # Run inside the container (./dev.sh python tools/decomp.py ...), after a successful `ninja`.
+# `info` and `diff` don't run ninja: several agents can use them at the same time on different source files.
 #
 #   info <func>              Module, address, size, assembly and external symbols of a function
-#   new <func> [--file F]    Creates a source file (or appends to F) with a stub, and declares it in delinks.txt
-#   diff <func>              Builds the function and prints its match percentage and an instruction diff
+#   new <func>... [--file F] Creates a source file per function (or appends them to F) with a stub, declares it in
+#                            delinks.txt and delinks the original code
+#   diff <func>              Compiles the function and prints its match percentage and an instruction diff
 #   complete <file>...       Checks that every function of the files matches, marks them `complete`, rebuilds once
 #   todo <module>            Lists the functions of a module that are not decompiled yet
 ###
@@ -14,6 +16,7 @@
 import argparse
 import json
 import re
+import shlex
 import subprocess
 import sys
 import tempfile
@@ -25,6 +28,7 @@ GAME_VERSION = "usa"
 config_root = root_path / "config" / GAME_VERSION / "arm9"
 build_root = root_path / "build" / GAME_VERSION
 asm_root = build_root / "asm"
+scratch_root = build_root / "scratch"
 
 SYMBOL_RE = re.compile(r"^(\S+) kind:(\w+)(?:\(([^)]*)\))? addr:(0x[0-9a-fA-F]+)")
 
@@ -176,8 +180,7 @@ def cmd_info(args):
         print("\nLiteral pool entries are listed after the function in the assembly above (.word).")
 
 
-def cmd_new(args):
-    sym = find_function(args.function)
+def add_function(sym: Symbol, file: str | None) -> str:
     path, header, files, entry = file_entry_for(sym)
     if entry is not None:
         sys.exit(f"{sym.name} already belongs to {entry['name']}")
@@ -186,8 +189,8 @@ def cmd_new(args):
     stub = (f'extern "C" void {sym.name}() {{\n'
             f'    // TODO: decompile\n'
             f'}}\n')
-    if args.file:
-        source = args.file
+    if file:
+        source = file
         target = next((f for f in files if f["name"] == source), None)
         if target is None:
             sys.exit(f"{source} is not declared in {path.relative_to(root_path)}")
@@ -208,6 +211,12 @@ def cmd_new(args):
         files.append({"name": source, "complete": False, "sections": [[".text", start, end]]})
     write_delinks(path, header, files)
     print(f"{source}: added {sym.name} (.text 0x{start:08x}-0x{end:08x}, not complete)")
+    return source
+
+
+def cmd_new(args):
+    for name in args.functions:
+        add_function(find_function(name), args.file)
     run(["python", "tools/configure.py", GAME_VERSION])
     run(["ninja", "delink"])
 
@@ -228,14 +237,38 @@ def objdiff_percent(target: Path, base: Path, name: str, relaxed: bool) -> tuple
     return (right.get("match_percent", 0.0) if right else None), left, right
 
 
+def mwcc_command(source: str, out_dir: Path) -> list[str]:
+    """The `mwcc` command of build.ninja for one source file. Compiling outside of ninja lets several agents work at the
+    same time: concurrent ninja runs in the same build directory would corrupt its state."""
+    text = (root_path / "build.ninja").read_text().replace("$\n", "")
+    command = re.search(r"^rule mwcc\n\s+command = (.*)$", text, re.M).group(1).split(" && ")[0]
+    obj = (build_root / Path(source).with_suffix(".o")).relative_to(root_path)
+    edge = re.search(rf"^build {re.escape(str(obj))}: mwcc .*\n((?:  \w+ = .*\n)+)", text, re.M)
+    if edge is None:
+        sys.exit(f"{source} is not in build.ninja: run `./dev.sh python tools/configure.py {GAME_VERSION}`")
+    variables = dict(line.strip().split(" = ", 1) for line in edge.group(1).splitlines())
+    variables.update({"in": source, "basedir": str(out_dir.relative_to(root_path))})
+    command = re.sub(r"\$(\w+)", lambda m: variables.get(m.group(1), ""), command)
+    return [arg for arg in shlex.split(command) if arg != "-MD"]
+
+
 def diff_function(sym: Symbol, source: str, verbose: bool) -> float:
     """Returns 100.0 when the instructions match. Relocations that only differ by target address (calls to functions
     of the same file, which mwcc puts in separate sections) are ignored here: `complete` verifies them by linking."""
-    target, base = object_paths(source)
-    build = run(["ninja", str(base.relative_to(root_path)), str(target.relative_to(root_path))], check=False)
-    if build.returncode != 0:
-        print("Compilation failed:")
-        print("\n".join(line for line in (build.stdout + build.stderr).splitlines() if "error" in line.lower() or "#" in line)[-3000:])
+    target, _ = object_paths(source)
+    if not target.is_file():
+        print(f"{target.relative_to(root_path)} is missing: run `./dev.sh ninja delink`")
+        return -1.0
+    base = scratch_root / Path(source).with_suffix(".o")
+    base.parent.mkdir(parents=True, exist_ok=True)
+    base.unlink(missing_ok=True)
+    build = run(mwcc_command(source, base.parent), check=False)
+    if build.returncode != 0 or not base.is_file():
+        # Under wibo, mwcc can't load its message strings: errors only give a line number, show that line
+        print("Compilation failed (mwcc only reports line numbers):")
+        lines = (root_path / source).read_text().splitlines()
+        for number in dict.fromkeys(int(n) for n in re.findall(r"^\S+:(\d+):", build.stdout, re.M)):
+            print(f"  {source}:{number}: {lines[number - 1].strip() if number <= len(lines) else ''}")
         return -1.0
     percent, left, right = objdiff_percent(target, base, sym.name, relaxed=False)
     if right is None:
@@ -329,7 +362,7 @@ def main():
     parser = argparse.ArgumentParser(description="Decompilation helper")
     sub = parser.add_subparsers(dest="command", required=True)
     p = sub.add_parser("info"); p.add_argument("function"); p.set_defaults(func=cmd_info)
-    p = sub.add_parser("new"); p.add_argument("function"); p.add_argument("--file"); p.set_defaults(func=cmd_new)
+    p = sub.add_parser("new"); p.add_argument("functions", nargs="+"); p.add_argument("--file"); p.set_defaults(func=cmd_new)
     p = sub.add_parser("diff"); p.add_argument("function"); p.set_defaults(func=cmd_diff)
     p = sub.add_parser("complete"); p.add_argument("files", nargs="+"); p.set_defaults(func=cmd_complete)
     p = sub.add_parser("todo"); p.add_argument("module"); p.set_defaults(func=cmd_todo)
