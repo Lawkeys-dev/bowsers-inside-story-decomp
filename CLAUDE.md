@@ -35,7 +35,8 @@ when no other agent is working.
 "Lance une session de décompilation sur ov001" (or `/decomp-session ov001`) runs the `decomp-session` skill
 (`.claude/skills/decomp-session/`): a Sonnet orchestrator prepares the module, gives each function to a Haiku
 `decomp-function` agent (`.claude/agents/`), 5 at most at the same time, verifies every result with its own `diff` and
-completes only the functions that match at 100%.
+completes only the functions that match at 100%. A function that doesn't match gets a second Haiku attempt with an
+optimized prompt, then 2 Sonnet attempts, then a `// TODO` and the session moves on.
 
 ## Rules
 
