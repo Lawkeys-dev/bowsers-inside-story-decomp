@@ -30,13 +30,16 @@ Matching decompilation of Mario & Luigi: Bowser's Inside Story (Nintendo DS, USA
 can use them at the same time, each on its own source file. `new`, `complete` and `ninja` change shared state: run them only
 when no other agent is working.
 
-## Decompilation sessions
+## Agent orchestration
 
-"Lance une session de décompilation sur ov001" (or `/decomp-session ov001`) runs the `decomp-session` skill
-(`.claude/skills/decomp-session/`): a Sonnet orchestrator prepares the module, gives each function to a Haiku
-`decomp-function` agent (`.claude/agents/`), 5 at most at the same time, verifies every result with its own `diff` and
-completes only the functions that match at 100%. A function that doesn't match gets a second Haiku attempt with an
-optimized prompt, then 2 Sonnet attempts, then a `// TODO` and the session moves on.
+- `/decomp-unit ov004` (skill `.claude/skills/decomp-unit/`): fast pass on a whole unit. A Sonnet orchestrator gives each
+  function to a Haiku `decomp-worker` agent (`.claude/agents/`), 8 at most at the same time, verifies every result with its
+  own `diff`, retries once, then leaves a `// TODO`. It completes only the functions that match at 100%.
+- `/decomp-function func_ov001_02069ac8` (skill `.claude/skills/decomp-function/`): deep work on one hard function, usually
+  a TODO left by `/decomp-unit`. Opus orchestrates up to 3 Sonnet `decomp-worker` attempts, then takes over for up to 3
+  tries of its own, then leaves a `// TODO`.
+- `/decomp-unit` never runs `/decomp-function`. Both share the review rules of `.claude/decomp-review.md`.
+- Don't run two orchestrators at the same time: `new`, `complete` and `ninja` change shared state.
 
 ## Rules
 

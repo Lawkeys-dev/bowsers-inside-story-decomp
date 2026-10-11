@@ -1,6 +1,6 @@
 ---
-name: decomp-function
-description: Decompiles ONE function of Bowser's Inside Story into C++ that compiles to identical code. Launched by the decomp-session orchestrator with a function name and its source file; works only in that file.
+name: decomp-worker
+description: Decompiles ONE function of Bowser's Inside Story into C++ that compiles to identical code. Launched by the /decomp-unit orchestrator (Haiku) or the /decomp-function orchestrator (Sonnet) with a function name and its source file; works only in that file.
 tools: Read, Edit, Write, Bash, Grep, Glob
 model: claude-haiku-5-5
 ---
