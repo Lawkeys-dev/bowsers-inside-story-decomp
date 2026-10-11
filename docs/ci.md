@@ -38,6 +38,9 @@ artifact.
    be public).
 2. **Manage → Add New**: select the repository, game name `Mario & Luigi: Bowser's Inside Story`, platform Nintendo DS.
 3. In the project settings, select the `Build` workflow and use **Refresh** to fetch the existing reports.
+4. Install the [decomp.dev GitHub App](https://github.com/apps/decomp-dev) on the repository (**Only select repositories** →
+   `bowsers-inside-story-decomp`). decomp.dev only learns about new workflow runs through this app: without it, the progress
+   stays at the last manual refresh. The project settings show "GitHub App installation ID" once it's installed.
 
 ## Badges and progress map
 
