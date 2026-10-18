@@ -44,6 +44,31 @@ def size(symbol: tuple[str, str, str, int]) -> int | None:
     return int(m.group(1), 16) if m else None
 
 
+RELOC_RE = re.compile(r"from:(0x[0-9a-fA-F]+) kind:(\w+) to:(0x[0-9a-fA-F]+)(?: add:\S+)? module:(\S+)")
+
+
+def load_relocs(path: Path) -> dict[int, tuple[str, int, str]]:
+    """Relocations by source address: (kind, target address, target module)."""
+    relocs = {}
+    for line in path.read_text().splitlines():
+        m = RELOC_RE.match(line.strip())
+        if m:
+            relocs[int(m.group(1), 16)] = (m.group(2), int(m.group(3), 16), m.group(4))
+    return relocs
+
+
+def module_key(module: Path) -> str:
+    """The `module:` value of relocations to this module."""
+    name = module.name if module.parts else "main"
+    return f"overlay({int(name[2:])})" if name.startswith("ov") else name
+
+
+def generated_name(symbol: tuple[str, str, str, int], module: Path) -> str:
+    prefix = "func" if symbol[1] == "function" else "data"
+    overlay = f"{module.name}_" if module.name.startswith("ov") else ""
+    return f"{prefix}_{overlay}{symbol[3]:08x}"
+
+
 def main():
     parser = argparse.ArgumentParser(description="Ports delinks and symbol names from the reference version")
     parser.add_argument("version", help="Target version, e.g. eur")
@@ -54,38 +79,75 @@ def main():
     if not dst_root.is_dir():
         sys.exit(f"config/{args.version}/ not found: run `python tools/bootstrap.py` with that ROM first")
 
+    modules = [p.parent for p in sorted(ref_root.rglob("symbols.txt"))]
+    ref_syms = {m: load_symbols(m / "symbols.txt") for m in modules}
+    dst_syms = {m: load_symbols(dst_root / m.relative_to(ref_root) / "symbols.txt") for m in modules}
+
+    # 1. Symbol runs with the same shape are paired in order. Function sizes make this reliable for functions, but data
+    #    symbols have no size: version-specific data shifts the pairing, so it's only a fallback for data (step 2)
+    seq_pairs: dict[Path, list[tuple]] = {}
+    for m in modules:
+        ref, dst = ref_syms[m], dst_syms[m]
+        matcher = difflib.SequenceMatcher(None, [shape(s) for s in ref], [shape(s) for s in dst], autojunk=False)
+        seq_pairs[m] = [pair for tag, i1, i2, j1, j2 in matcher.get_opcodes() if tag == "equal"
+                        for pair in zip(ref[i1:i2], dst[j1:j2])]
+
+    # 2. Paired functions of the same size reference the same data at the same offsets: their relocations pair the data
+    relocs = {v: {m: load_relocs(root / m.relative_to(ref_root) / "relocs.txt") for m in modules}
+              for v, root in (("ref", ref_root), ("dst", dst_root))}
+    evidence: dict[tuple[str, int], set[int]] = {}
+    for m in modules:
+        ref_by_from = relocs["ref"][m]
+        dst_by_from = relocs["dst"][m]
+        for r, d in seq_pairs[m]:
+            if r[1] != "function" or size(r) != size(d):
+                continue
+            for offset in range(0, size(r), 4):
+                a, b = ref_by_from.get(r[3] + offset), dst_by_from.get(d[3] + offset)
+                if a is not None and b is not None and a[0] == b[0] and a[2] == b[2]:
+                    evidence.setdefault((a[2], a[1]), set()).add(b[1])
+
     renamed = ported = 0
     skipped: list[str] = []
     new_names: dict[Path, dict[str, str]] = {}
     all_names: list[str] = []
     delinks: list[tuple[Path, str, list[dict]]] = []
-    for ref_symbols_path in sorted(ref_root.rglob("symbols.txt")):
-        module = ref_symbols_path.parent
-        dst_module = dst_root / module.relative_to(ref_root)
-        ref = load_symbols(ref_symbols_path)
-        dst = load_symbols(dst_module / "symbols.txt")
-
-        # Only symbol runs with the same shape are paired: anything else is version-specific and keeps its own name
+    for m in modules:
+        dst_module = dst_root / m.relative_to(ref_root)
+        ref, dst = ref_syms[m], dst_syms[m]
+        key = module_key(m.relative_to(ref_root))
+        dst_at = {s[3]: s for s in dst}
         names: dict[str, str] = {}
+        used: set[str] = set()
+        for r in ref:
+            targets = evidence.get((key, r[3]))
+            if r[1] != "function" and targets is not None and len(targets) == 1:
+                d = dst_at.get(next(iter(targets)))
+                if d is not None and d[0] not in names:
+                    names[d[0]] = r[0]
+                    used.add(r[0])
         addrs: dict[int, int] = {}
-        matcher = difflib.SequenceMatcher(None, [shape(s) for s in ref], [shape(s) for s in dst], autojunk=False)
-        for tag, i1, i2, j1, j2 in matcher.get_opcodes():
-            if tag != "equal":
-                continue
-            for r, d in zip(ref[i1:i2], dst[j1:j2]):
-                names[d[0]] = r[0]
+        for r, d in seq_pairs[m]:
+            if r[1] == "function":
                 addrs[r[3]] = d[3]
-                if size(r) is not None and size(d) is not None:
-                    addrs[r[3] + size(r)] = d[3] + size(d)
-        # A version-specific symbol can carry the name that a moved symbol takes over
-        taken = {r for d, r in names.items() if d != r}
+                addrs[r[3] + size(r)] = d[3] + size(d)
+            if d[0] not in names and r[0] not in used:
+                names[d[0]] = r[0]
+                used.add(r[0])
+        # Unpaired symbols named after an older pairing get their generated name back, and a version-specific symbol
+        # whose name a paired symbol takes over gets a version suffix
+        paired = set(names)
         for s in dst:
-            if s[0] not in names and s[0] in taken:
-                names[s[0]] = f"{s[0]}_{args.version}"
+            if s[0] in paired:
+                continue
+            if re.fullmatch(r"(func|data)_(ov\d{3}_)?[0-9a-f]{8}(_\w+)?", s[0]):
+                names[s[0]] = generated_name(s, m.relative_to(ref_root))
+            if names.get(s[0], s[0]) in used:
+                names[s[0]] = f"{generated_name(s, m.relative_to(ref_root))}_{args.version}"
         new_names[dst_module] = names
         all_names += [names.get(s[0], s[0]) for s in dst]
 
-        header, ref_files = parse_delinks(module / "delinks.txt")
+        header, ref_files = parse_delinks(m / "delinks.txt")
         dst_header, _ = parse_delinks(dst_module / "delinks.txt")
         files = []
         for entry in ref_files:
