@@ -16,3 +16,19 @@ src/ov071/func_ov071_020c93f8.cpp:
 src/ov071/func_ov071_020cb898.cpp:
     complete
     .text       start:0x020cb898 end:0x020cb8b4
+
+src/ov071/func_ov071_020ca610.cpp:
+    complete
+    .text       start:0x020ca610 end:0x020ca644
+
+src/ov071/func_ov071_020ca2d4.cpp:
+    complete
+    .text       start:0x020ca2d4 end:0x020ca2f4
+
+src/ov071/func_ov071_020ca8ac.cpp:
+    complete
+    .text       start:0x020ca8ac end:0x020ca8cc
+
+src/ov071/func_ov071_020ca978.cpp:
+    complete
+    .text       start:0x020ca978 end:0x020ca9ac

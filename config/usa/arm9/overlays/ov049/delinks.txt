@@ -27,3 +27,15 @@ src/ov049/func_ov049_020cc7cc.cpp:
 src/ov049/func_ov049_020d4c94.cpp:
     complete
     .text       start:0x020d4c94 end:0x020d4cbc
+
+src/ov049/func_ov049_020cb454.cpp:
+    complete
+    .text       start:0x020cb454 end:0x020cb464
+
+src/ov049/func_ov049_020cb478.cpp:
+    complete
+    .text       start:0x020cb478 end:0x020cb488
+
+src/ov049/func_ov049_020cb488.cpp:
+    complete
+    .text       start:0x020cb488 end:0x020cb498

@@ -7,3 +7,23 @@
 src/ov109/func_ov109_020cb964.cpp:
     complete
     .text       start:0x020cb964 end:0x020cb978
+
+src/ov109/func_ov109_020d2918.cpp:
+    complete
+    .text       start:0x020d2918 end:0x020d293c
+
+src/ov109/func_ov109_020cb440.cpp:
+    complete
+    .text       start:0x020cb440 end:0x020cb450
+
+src/ov109/func_ov109_020cb978.cpp:
+    complete
+    .text       start:0x020cb978 end:0x020cb988
+
+src/ov109/func_ov109_020cb988.cpp:
+    complete
+    .text       start:0x020cb988 end:0x020cb998
+
+src/ov109/func_ov109_020cb9b8.cpp:
+    complete
+    .text       start:0x020cb9b8 end:0x020cb9c8

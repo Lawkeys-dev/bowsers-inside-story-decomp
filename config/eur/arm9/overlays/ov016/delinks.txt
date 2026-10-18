@@ -83,3 +83,39 @@ src/ov016/func_ov016_020b1fdc.cpp:
 src/ov016/func_ov016_020b7f58.cpp:
     complete
     .text       start:0x020b7f58 end:0x020b7f64
+
+src/ov016/func_ov016_020b6d5c.cpp:
+    complete
+    .text       start:0x020b6d5c end:0x020b6d7c
+
+src/ov016/func_ov016_020ad770.cpp:
+    complete
+    .text       start:0x020ad770 end:0x020ad7a0
+
+src/ov016/func_ov016_020ad898.cpp:
+    complete
+    .text       start:0x020ad898 end:0x020ad8c8
+
+src/ov016/func_ov016_020af85c.cpp:
+    complete
+    .text       start:0x020af85c end:0x020af88c
+
+src/ov016/func_ov016_020ad748.cpp:
+    complete
+    .text       start:0x020ad748 end:0x020ad770
+
+src/ov016/func_ov016_020ad8c8.cpp:
+    complete
+    .text       start:0x020ad8c8 end:0x020ad8f0
+
+src/ov016/func_ov016_020af88c.cpp:
+    complete
+    .text       start:0x020af88c end:0x020af8b4
+
+src/ov016/func_ov016_020b6f98.cpp:
+    complete
+    .text       start:0x020b6f98 end:0x020b6fb8
+
+src/ov016/func_ov016_020b710c.cpp:
+    complete
+    .text       start:0x020b710c end:0x020b712c

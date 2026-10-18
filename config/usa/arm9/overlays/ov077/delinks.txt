@@ -10,3 +10,11 @@ src/ov077/func_ov077_020c8fe0.cpp:
 src/ov077/func_ov077_020c91cc.cpp:
     complete
     .text       start:0x020c91cc end:0x020c9220
+
+src/ov077/func_ov077_020c93e4.cpp:
+    complete
+    .text       start:0x020c93e4 end:0x020c9404
+
+src/ov077/func_ov077_020c9288.cpp:
+    complete
+    .text       start:0x020c9288 end:0x020c92bc

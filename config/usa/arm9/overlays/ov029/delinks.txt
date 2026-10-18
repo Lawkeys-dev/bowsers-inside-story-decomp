@@ -11,3 +11,15 @@ src/ov029/func_ov029_020d0560.cpp:
 src/ov029/func_ov029_020cb450.cpp:
     complete
     .text       start:0x020cb450 end:0x020cb464
+
+src/ov029/func_ov029_020cb440.cpp:
+    complete
+    .text       start:0x020cb440 end:0x020cb450
+
+src/ov029/func_ov029_020cb464.cpp:
+    complete
+    .text       start:0x020cb464 end:0x020cb474
+
+src/ov029/func_ov029_020cb474.cpp:
+    complete
+    .text       start:0x020cb474 end:0x020cb484

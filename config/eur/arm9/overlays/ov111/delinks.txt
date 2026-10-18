@@ -11,3 +11,15 @@ src/ov111/func_ov111_020cb4c4.cpp:
 src/ov111/func_ov111_020d2cec.cpp:
     complete
     .text       start:0x020d2cec end:0x020d2cf8
+
+src/ov111/func_ov111_020cb440.cpp:
+    complete
+    .text       start:0x020cb440 end:0x020cb450
+
+src/ov111/func_ov111_020cb4d8.cpp:
+    complete
+    .text       start:0x020cb4d8 end:0x020cb4e8
+
+src/ov111/func_ov111_020cb4e8.cpp:
+    complete
+    .text       start:0x020cb4e8 end:0x020cb4f8

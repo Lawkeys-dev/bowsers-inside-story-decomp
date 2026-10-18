@@ -19,3 +19,7 @@ src/ov101/func_ov101_020ccd4c.cpp:
 src/ov101/func_ov101_020ccfb0.cpp:
     complete
     .text       start:0x020ccfb0 end:0x020ccfc4
+
+src/ov101/func_ov101_020cbd40.cpp:
+    complete
+    .text       start:0x020cbd40 end:0x020cbd60

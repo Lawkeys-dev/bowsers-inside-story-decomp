@@ -11,3 +11,18 @@ src/ov031/func_ov031_020cb440.cpp:
 src/ov031/func_ov031_020cb464.cpp:
     complete
     .text       start:0x020cb464 end:0x020cb478
+
+src/ov031/func_ov031_020cd30c.cpp:
+    .text       start:0x020cd30c end:0x020cd3f8
+
+src/ov031/func_ov031_020cb454.cpp:
+    complete
+    .text       start:0x020cb454 end:0x020cb464
+
+src/ov031/func_ov031_020cb478.cpp:
+    complete
+    .text       start:0x020cb478 end:0x020cb488
+
+src/ov031/func_ov031_020cb488.cpp:
+    complete
+    .text       start:0x020cb488 end:0x020cb498

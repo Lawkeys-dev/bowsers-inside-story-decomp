@@ -7,3 +7,7 @@
 src/ov073/func_ov073_020c8fe0.cpp:
     complete
     .text       start:0x020c8fe0 end:0x020c8fe4
+
+src/ov073/func_ov073_020c9670.cpp:
+    complete
+    .text       start:0x020c9670 end:0x020c96a4

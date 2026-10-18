@@ -23,3 +23,7 @@ src/ov024/func_ov024_020d0768.cpp:
 src/ov024/func_ov024_020d2fcc.cpp:
     complete
     .text       start:0x020d2fcc end:0x020d2fd8
+
+src/ov024/func_ov024_020d18f8.cpp:
+    complete
+    .text       start:0x020d18f8 end:0x020d1918

@@ -734,3 +734,51 @@ src/main/func_020475e8.cpp:
 src/main/func_020479a4.cpp:
     complete
     .text       start:0x020479a4 end:0x020479b0
+
+src/main/func_02021e60.cpp:
+    complete
+    .text       start:0x02021e60 end:0x02021e88
+
+src/main/func_02020b68.cpp:
+    complete
+    .text       start:0x02020b68 end:0x02020b98
+
+src/main/func_020228a0.cpp:
+    complete
+    .text       start:0x020228a0 end:0x020228d0
+
+src/main/func_020255dc.cpp:
+    complete
+    .text       start:0x020255dc end:0x0202560c
+
+src/main/func_02026a8c.cpp:
+    complete
+    .text       start:0x02026a8c end:0x02026abc
+
+src/main/func_02027adc.cpp:
+    complete
+    .text       start:0x02027adc end:0x02027b0c
+
+src/main/func_02028768.cpp:
+    complete
+    .text       start:0x02028768 end:0x02028798
+
+src/main/func_020228d0.cpp:
+    complete
+    .text       start:0x020228d0 end:0x020228f8
+
+src/main/func_0202560c.cpp:
+    complete
+    .text       start:0x0202560c end:0x02025634
+
+src/main/func_02026abc.cpp:
+    complete
+    .text       start:0x02026abc end:0x02026ae4
+
+src/main/func_02027b0c.cpp:
+    complete
+    .text       start:0x02027b0c end:0x02027b34
+
+src/main/func_02028798.cpp:
+    complete
+    .text       start:0x02028798 end:0x020287c0

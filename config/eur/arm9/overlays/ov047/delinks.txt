@@ -15,3 +15,15 @@ src/ov047/func_ov047_020d3cfc.cpp:
 src/ov047/func_ov047_020cc0b4.cpp:
     complete
     .text       start:0x020cc0b4 end:0x020cc0c8
+
+src/ov047/func_ov047_020cb440.cpp:
+    complete
+    .text       start:0x020cb440 end:0x020cb450
+
+src/ov047/func_ov047_020cc0c8.cpp:
+    complete
+    .text       start:0x020cc0c8 end:0x020cc0d8
+
+src/ov047/func_ov047_020cc0d8.cpp:
+    complete
+    .text       start:0x020cc0d8 end:0x020cc0e8

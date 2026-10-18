@@ -7,3 +7,15 @@
 src/ov035/func_ov035_020cb450.cpp:
     complete
     .text       start:0x020cb450 end:0x020cb464
+
+src/ov035/func_ov035_020cb440.cpp:
+    complete
+    .text       start:0x020cb440 end:0x020cb450
+
+src/ov035/func_ov035_020cb464.cpp:
+    complete
+    .text       start:0x020cb464 end:0x020cb474
+
+src/ov035/func_ov035_020cb474.cpp:
+    complete
+    .text       start:0x020cb474 end:0x020cb484
