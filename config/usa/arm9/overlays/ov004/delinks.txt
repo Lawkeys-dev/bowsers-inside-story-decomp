@@ -368,3 +368,19 @@ src/ov004/func_ov004_020d0150.cpp:
 src/ov004/func_ov004_020d0164.cpp:
     complete
     .text       start:0x020d0164 end:0x020d0180
+
+src/ov004/func_ov004_020af6b8.cpp:
+    complete
+    .text       start:0x020af6b8 end:0x020af6c4
+
+src/ov004/func_ov004_020b26f0.cpp:
+    complete
+    .text       start:0x020b26f0 end:0x020b2704
+
+src/ov004/func_ov004_020cd7a8.cpp:
+    complete
+    .text       start:0x020cd7a8 end:0x020cd7b8
+
+src/ov004/func_ov004_020cd7b8.cpp:
+    complete
+    .text       start:0x020cd7b8 end:0x020cd7c8

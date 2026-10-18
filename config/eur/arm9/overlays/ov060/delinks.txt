@@ -12,3 +12,7 @@ src/ov060/func_ov060_020cb3dc.cpp:
 src/ov060/func_ov060_020cb950.cpp:
     complete
     .text       start:0x020cb950 end:0x020cb984
+
+src/ov060/func_ov060_020ca498.cpp:
+    complete
+    .text       start:0x020ca498 end:0x020ca4ac

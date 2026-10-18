@@ -15,3 +15,7 @@ src/ov130/func_ov130_0206db54.cpp:
 src/ov130/func_ov130_0206db20.cpp:
     complete
     .text       start:0x0206db20 end:0x0206db40
+
+src/ov130/func_ov130_0206db70.cpp:
+    complete
+    .text       start:0x0206db70 end:0x0206db80

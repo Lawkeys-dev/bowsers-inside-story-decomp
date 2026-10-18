@@ -27,3 +27,19 @@ src/ov128/func_ov128_0206e9f4.cpp:
 src/ov128/func_ov128_0206e9c0.cpp:
     complete
     .text       start:0x0206e9c0 end:0x0206e9e0
+
+src/ov128/func_ov128_0206ea10.cpp:
+    complete
+    .text       start:0x0206ea10 end:0x0206ea20
+
+src/ov128/func_ov128_02072ed0.cpp:
+    complete
+    .text       start:0x02072ed0 end:0x02072edc
+
+src/ov128/func_ov128_02072edc.cpp:
+    complete
+    .text       start:0x02072edc end:0x02072ee8
+
+src/ov128/func_ov128_0207311c.cpp:
+    complete
+    .text       start:0x0207311c end:0x0207312c

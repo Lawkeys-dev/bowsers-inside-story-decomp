@@ -380,3 +380,23 @@ src/ov124/func_ov124_0209aec8.cpp:
 src/ov124/func_ov124_0209aed8.cpp:
     complete
     .text       start:0x0209aed8 end:0x0209aee8
+
+src/ov124/func_ov124_0207645c.cpp:
+    complete
+    .text       start:0x0207645c end:0x02076468
+
+src/ov124/func_ov124_02076468.cpp:
+    complete
+    .text       start:0x02076468 end:0x02076474
+
+src/ov124/func_ov124_02076474.cpp:
+    complete
+    .text       start:0x02076474 end:0x02076480
+
+src/ov124/func_ov124_020799d0.cpp:
+    complete
+    .text       start:0x020799d0 end:0x020799e0
+
+src/ov124/func_ov124_0209380c.cpp:
+    complete
+    .text       start:0x0209380c end:0x02093818

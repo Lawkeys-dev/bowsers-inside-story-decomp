@@ -55,3 +55,15 @@ src/ov127/func_ov127_0206b1d4.cpp:
 src/ov127/func_ov127_0206c158.cpp:
     complete
     .text       start:0x0206c158 end:0x0206c16c
+
+src/ov127/func_ov127_0206a318.cpp:
+    complete
+    .text       start:0x0206a318 end:0x0206a328
+
+src/ov127/func_ov127_0206b1a0.cpp:
+    complete
+    .text       start:0x0206b1a0 end:0x0206b1ac
+
+src/ov127/func_ov127_0206b638.cpp:
+    complete
+    .text       start:0x0206b638 end:0x0206b644

@@ -59,3 +59,23 @@ src/ov015/func_ov015_020a7ed4.cpp:
 src/ov015/func_ov015_020acaf4.cpp:
     complete
     .text       start:0x020acaf4 end:0x020acafc
+
+src/ov015/func_ov015_020a4e2c.cpp:
+    complete
+    .text       start:0x020a4e2c end:0x020a4e3c
+
+src/ov015/func_ov015_020aa130.cpp:
+    complete
+    .text       start:0x020aa130 end:0x020aa140
+
+src/ov015/func_ov015_020aa140.cpp:
+    complete
+    .text       start:0x020aa140 end:0x020aa150
+
+src/ov015/func_ov015_020ac8b8.cpp:
+    complete
+    .text       start:0x020ac8b8 end:0x020ac8cc
+
+src/ov015/func_ov015_020ac988.cpp:
+    complete
+    .text       start:0x020ac988 end:0x020ac99c

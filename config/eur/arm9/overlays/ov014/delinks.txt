@@ -35,3 +35,15 @@ src/ov014/func_ov014_020951c4.cpp:
 src/ov014/func_ov014_02098dec.cpp:
     complete
     .text       start:0x02098dec end:0x02098e00
+
+src/ov014/func_ov014_02096748.cpp:
+    complete
+    .text       start:0x02096748 end:0x02096768
+
+src/ov014/func_ov014_02096768.cpp:
+    complete
+    .text       start:0x02096768 end:0x02096790
+
+src/ov014/func_ov014_02096790.cpp:
+    complete
+    .text       start:0x02096790 end:0x020967b0

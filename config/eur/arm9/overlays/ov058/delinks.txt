@@ -8,3 +8,7 @@
 src/ov058/func_ov058_020ca2f0.cpp:
     complete
     .text       start:0x020ca2f0 end:0x020ca2f4
+
+src/ov058/func_ov058_020c9e28.cpp:
+    complete
+    .text       start:0x020c9e28 end:0x020c9e3c

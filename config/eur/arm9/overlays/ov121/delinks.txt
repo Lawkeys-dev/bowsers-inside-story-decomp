@@ -20,3 +20,31 @@ src/ov121/func_ov121_020e537c.cpp:
 src/ov121/func_ov121_020e6424.cpp:
     complete
     .text       start:0x020e6424 end:0x020e6438
+
+src/ov121/func_ov121_020e3728.cpp:
+    complete
+    .text       start:0x020e3728 end:0x020e3738
+
+src/ov121/func_ov121_020e3b5c.cpp:
+    complete
+    .text       start:0x020e3b5c end:0x020e3b68
+
+src/ov121/func_ov121_020e3fe4.cpp:
+    complete
+    .text       start:0x020e3fe4 end:0x020e3ff0
+
+src/ov121/func_ov121_020e68dc.cpp:
+    complete
+    .text       start:0x020e68dc end:0x020e68ec
+
+src/ov121/func_ov121_020e713c.cpp:
+    complete
+    .text       start:0x020e713c end:0x020e7148
+
+src/ov121/func_ov121_020e7890.cpp:
+    complete
+    .text       start:0x020e7890 end:0x020e789c
+
+src/ov121/func_ov121_020eb640.cpp:
+    complete
+    .text       start:0x020eb640 end:0x020eb650

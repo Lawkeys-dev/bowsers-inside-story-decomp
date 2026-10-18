@@ -743,3 +743,7 @@ src/ov012/func_ov012_0207d1ec.cpp:
 src/ov012/func_ov012_020856c4.cpp:
     complete
     .text       start:0x020856c4 end:0x020856d4
+
+src/ov012/func_ov012_0207e47c.cpp:
+    complete
+    .text       start:0x0207e47c end:0x0207e488

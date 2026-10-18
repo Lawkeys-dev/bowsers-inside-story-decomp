@@ -15,3 +15,7 @@ src/ov083/func_ov083_020c9d58.cpp:
 src/ov083/func_ov083_020c9f84.cpp:
     complete
     .text       start:0x020c9f84 end:0x020c9f94
+
+src/ov083/func_ov083_020ca864.cpp:
+    complete
+    .text       start:0x020ca864 end:0x020ca870

@@ -548,3 +548,23 @@ src/ov011/func_ov011_0206bb18.cpp:
 src/ov011/func_ov011_0206bb34.cpp:
     complete
     .text       start:0x0206bb34 end:0x0206bb50
+
+src/ov011/func_ov011_02068a64.cpp:
+    complete
+    .text       start:0x02068a64 end:0x02068a70
+
+src/ov011/func_ov011_0206af50.cpp:
+    complete
+    .text       start:0x0206af50 end:0x0206af60
+
+src/ov011/func_ov011_0206b2d0.cpp:
+    complete
+    .text       start:0x0206b2d0 end:0x0206b2e0
+
+src/ov011/func_ov011_0206b4a8.cpp:
+    complete
+    .text       start:0x0206b4a8 end:0x0206b4b8
+
+src/ov011/func_ov011_0206ca7c.cpp:
+    complete
+    .text       start:0x0206ca7c end:0x0206ca90

@@ -416,3 +416,19 @@ src/ov122/func_ov122_02072634.cpp:
 src/ov122/func_ov122_02072648.cpp:
     complete
     .text       start:0x02072648 end:0x0207265c
+
+src/ov122/func_ov122_0206b86c.cpp:
+    complete
+    .text       start:0x0206b86c end:0x0206b87c
+
+src/ov122/func_ov122_0206d83c.cpp:
+    complete
+    .text       start:0x0206d83c end:0x0206d848
+
+src/ov122/func_ov122_0206f688.cpp:
+    complete
+    .text       start:0x0206f688 end:0x0206f698
+
+src/ov122/func_ov122_0206f698.cpp:
+    complete
+    .text       start:0x0206f698 end:0x0206f6a8

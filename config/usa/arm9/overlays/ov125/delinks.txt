@@ -127,3 +127,11 @@ src/ov125/func_ov125_0207efa8.cpp:
 src/ov125/func_ov125_0208004c.cpp:
     complete
     .text       start:0x0208004c end:0x02080060
+
+src/ov125/func_ov125_02078e80.cpp:
+    complete
+    .text       start:0x02078e80 end:0x02078e8c
+
+src/ov125/func_ov125_0207e3f0.cpp:
+    complete
+    .text       start:0x0207e3f0 end:0x0207e404

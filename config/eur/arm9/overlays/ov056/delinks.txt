@@ -12,3 +12,27 @@ src/ov056/func_ov056_020cbe2c.cpp:
 src/ov056/func_ov056_020cc024.cpp:
     complete
     .text       start:0x020cc024 end:0x020cc038
+
+src/ov056/func_ov056_020ce2a0.cpp:
+    complete
+    .text       start:0x020ce2a0 end:0x020ce2b0
+
+src/ov056/func_ov056_020cf098.cpp:
+    complete
+    .text       start:0x020cf098 end:0x020cf0a8
+
+src/ov056/func_ov056_020cf0a8.cpp:
+    complete
+    .text       start:0x020cf0a8 end:0x020cf0b8
+
+src/ov056/func_ov056_020cf1fc.cpp:
+    complete
+    .text       start:0x020cf1fc end:0x020cf208
+
+src/ov056/func_ov056_020d14ec.cpp:
+    complete
+    .text       start:0x020d14ec end:0x020d14f8
+
+src/ov056/func_ov056_020d201c.cpp:
+    complete
+    .text       start:0x020d201c end:0x020d202c

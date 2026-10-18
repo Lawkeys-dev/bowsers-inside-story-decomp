@@ -67,3 +67,7 @@ src/ov120/func_ov120_020d84d8.cpp:
 src/ov120/func_ov120_020da440.cpp:
     complete
     .text       start:0x020da440 end:0x020da448
+
+src/ov120/func_ov120_020d8424.cpp:
+    complete
+    .text       start:0x020d8424 end:0x020d8434

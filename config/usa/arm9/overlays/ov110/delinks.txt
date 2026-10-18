@@ -7,3 +7,7 @@
 src/ov110/func_ov110_020d06d4.cpp:
     complete
     .text       start:0x020d06d4 end:0x020d06d8
+
+src/ov110/func_ov110_020cb450.cpp:
+    complete
+    .text       start:0x020cb450 end:0x020cb464

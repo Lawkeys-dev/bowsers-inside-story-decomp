@@ -71,3 +71,15 @@ src/ov007/func_ov007_02115b20.cpp:
 src/ov007/func_ov007_02115bec.cpp:
     complete
     .text       start:0x02115bec end:0x02115bf4
+
+src/ov007/func_ov007_02111590.cpp:
+    complete
+    .text       start:0x02111590 end:0x021115a0
+
+src/ov007/func_ov007_021115a0.cpp:
+    complete
+    .text       start:0x021115a0 end:0x021115b0
+
+src/ov007/func_ov007_02113ed0.cpp:
+    complete
+    .text       start:0x02113ed0 end:0x02113edc

@@ -67,3 +67,19 @@ src/ov016/func_ov016_020b4b3c.cpp:
 src/ov016/func_ov016_020b51a4.cpp:
     complete
     .text       start:0x020b51a4 end:0x020b51b8
+
+src/ov016/func_ov016_020af2e0.cpp:
+    complete
+    .text       start:0x020af2e0 end:0x020af2ec
+
+src/ov016/func_ov016_020b0d60.cpp:
+    complete
+    .text       start:0x020b0d60 end:0x020b0d6c
+
+src/ov016/func_ov016_020b1fdc.cpp:
+    complete
+    .text       start:0x020b1fdc end:0x020b1fec
+
+src/ov016/func_ov016_020b7f58.cpp:
+    complete
+    .text       start:0x020b7f58 end:0x020b7f64

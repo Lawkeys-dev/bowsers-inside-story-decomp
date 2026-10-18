@@ -26,3 +26,7 @@ src/ov008/func_ov008_02063d44.cpp:
 src/ov008/func_ov008_02064cac.cpp:
     complete
     .text       start:0x02064cac end:0x02064cc8
+
+src/ov008/func_ov008_020648c8.cpp:
+    complete
+    .text       start:0x020648c8 end:0x020648d4

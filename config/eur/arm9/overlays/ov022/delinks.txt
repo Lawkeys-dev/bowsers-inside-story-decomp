@@ -40,3 +40,11 @@ src/ov022/func_ov022_020cf598.cpp:
 src/ov022/func_ov022_020cf5ac.cpp:
     complete
     .text       start:0x020cf5ac end:0x020cf5c0
+
+src/ov022/func_ov022_020db1fc.cpp:
+    complete
+    .text       start:0x020db1fc end:0x020db208
+
+src/ov022/func_ov022_020dbff8.cpp:
+    complete
+    .text       start:0x020dbff8 end:0x020dc008

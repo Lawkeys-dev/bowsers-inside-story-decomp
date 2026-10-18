@@ -476,3 +476,7 @@ src/ov123/func_ov123_0209c9e4.cpp:
 src/ov123/func_ov123_0209e804.cpp:
     complete
     .text       start:0x0209e804 end:0x0209e814
+
+src/ov123/func_ov123_020935d8.cpp:
+    complete
+    .text       start:0x020935d8 end:0x020935e4

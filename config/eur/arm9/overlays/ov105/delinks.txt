@@ -7,3 +7,7 @@
 src/ov105/func_ov105_020d0e60.cpp:
     complete
     .text       start:0x020d0e60 end:0x020d0e64
+
+src/ov105/func_ov105_020cb450.cpp:
+    complete
+    .text       start:0x020cb450 end:0x020cb464
