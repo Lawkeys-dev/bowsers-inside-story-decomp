@@ -35,3 +35,7 @@ src/ov078/func_ov078_020c9ca0.cpp:
 src/ov078/func_ov078_020ca208.cpp:
     complete
     .text       start:0x020ca208 end:0x020ca228
+
+src/ov078/func_ov078_020c9e14.cpp:
+    complete
+    .text       start:0x020c9e14 end:0x020c9e50

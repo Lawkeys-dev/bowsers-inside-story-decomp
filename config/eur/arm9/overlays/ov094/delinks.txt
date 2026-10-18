@@ -11,3 +11,7 @@ src/ov094/func_ov094_020c9ef0.cpp:
 src/ov094/func_ov094_020cb974.cpp:
     complete
     .text       start:0x020cb974 end:0x020cb9a8
+
+src/ov094/func_ov094_020caf24.cpp:
+    complete
+    .text       start:0x020caf24 end:0x020caf44

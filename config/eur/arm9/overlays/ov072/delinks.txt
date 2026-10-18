@@ -68,3 +68,18 @@ src/ov072/func_ov072_020cc020.cpp:
 src/ov072/func_ov072_020cc73c.cpp:
     complete
     .text       start:0x020cc73c end:0x020cc75c
+
+src/ov072/func_ov072_020c90f0.cpp:
+    complete
+    .text       start:0x020c90f0 end:0x020c9160
+
+src/ov072/func_ov072_020c92bc.cpp:
+    complete
+    .text       start:0x020c92bc end:0x020c9324
+
+src/ov072/func_ov072_020c8fe0.cpp:
+    .text       start:0x020c8fe0 end:0x020c9024
+
+src/ov072/func_ov072_020cbcf8.cpp:
+    complete
+    .text       start:0x020cbcf8 end:0x020cbd34

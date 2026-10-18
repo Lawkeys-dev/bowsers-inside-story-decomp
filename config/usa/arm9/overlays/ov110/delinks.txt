@@ -31,3 +31,7 @@ src/ov110/func_ov110_020cb528.cpp:
 src/ov110/func_ov110_020cb540.cpp:
     complete
     .text       start:0x020cb540 end:0x020cb558
+
+src/ov110/func_ov110_020cb510.cpp:
+    complete
+    .text       start:0x020cb510 end:0x020cb528

@@ -775,3 +775,19 @@ src/ov012/func_ov012_02079de0.cpp:
 src/ov012/func_ov012_02079eb0.cpp:
     complete
     .text       start:0x02079eb0 end:0x02079ed0
+
+src/ov012/func_ov012_0207ed98.cpp:
+    complete
+    .text       start:0x0207ed98 end:0x0207edd0
+
+src/ov012/func_ov012_0207edd0.cpp:
+    complete
+    .text       start:0x0207edd0 end:0x0207ee08
+
+src/ov012/func_ov012_0207ee08.cpp:
+    complete
+    .text       start:0x0207ee08 end:0x0207ee40
+
+src/ov012/func_ov012_0207ee40.cpp:
+    complete
+    .text       start:0x0207ee40 end:0x0207ee78

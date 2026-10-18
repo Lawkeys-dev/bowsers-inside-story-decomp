@@ -27,3 +27,7 @@ src/ov115/func_ov115_020cb50c.cpp:
 src/ov115/func_ov115_020cb4cc.cpp:
     complete
     .text       start:0x020cb4cc end:0x020cb4e8
+
+src/ov115/func_ov115_020cb4b4.cpp:
+    complete
+    .text       start:0x020cb4b4 end:0x020cb4cc

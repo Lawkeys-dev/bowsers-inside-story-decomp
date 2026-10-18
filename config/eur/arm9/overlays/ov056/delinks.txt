@@ -52,3 +52,51 @@ src/ov056/func_ov056_020cfee8.cpp:
 src/ov056/func_ov056_020d207c.cpp:
     complete
     .text       start:0x020d207c end:0x020d20c4
+
+src/ov056/func_ov056_020cbecc.cpp:
+    complete
+    .text       start:0x020cbecc end:0x020cbf18
+
+src/ov056/func_ov056_020cfaa8.cpp:
+    complete
+    .text       start:0x020cfaa8 end:0x020cfafc
+
+src/ov056/func_ov056_020cc038.cpp:
+    complete
+    .text       start:0x020cc038 end:0x020cc084
+
+src/ov056/func_ov056_020cc13c.cpp:
+    complete
+    .text       start:0x020cc13c end:0x020cc188
+
+src/ov056/func_ov056_020cc1e4.cpp:
+    complete
+    .text       start:0x020cc1e4 end:0x020cc230
+
+src/ov056/func_ov056_020cfa5c.cpp:
+    complete
+    .text       start:0x020cfa5c end:0x020cfaa8
+
+src/ov056/func_ov056_020cfafc.cpp:
+    complete
+    .text       start:0x020cfafc end:0x020cfb50
+
+src/ov056/func_ov056_020cfbb4.cpp:
+    complete
+    .text       start:0x020cfbb4 end:0x020cfc08
+
+src/ov056/func_ov056_020cfcd0.cpp:
+    complete
+    .text       start:0x020cfcd0 end:0x020cfd24
+
+src/ov056/func_ov056_020cfe40.cpp:
+    complete
+    .text       start:0x020cfe40 end:0x020cfe94
+
+src/ov056/func_ov056_020c8ffc.cpp:
+    complete
+    .text       start:0x020c8ffc end:0x020c9034
+
+src/ov056/func_ov056_020d0a84.cpp:
+    complete
+    .text       start:0x020d0a84 end:0x020d0abc

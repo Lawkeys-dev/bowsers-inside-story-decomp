@@ -19,3 +19,7 @@ src/ov062/func_ov062_020c9788.cpp:
 src/ov062/func_ov062_020c97b4.cpp:
     complete
     .text       start:0x020c97b4 end:0x020c97e0
+
+src/ov062/func_ov062_020c9760.cpp:
+    complete
+    .text       start:0x020c9760 end:0x020c9788

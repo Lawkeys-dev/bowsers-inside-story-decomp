@@ -119,3 +119,11 @@ src/ov016/func_ov016_020b6f98.cpp:
 src/ov016/func_ov016_020b710c.cpp:
     complete
     .text       start:0x020b710c end:0x020b712c
+
+src/ov016/func_ov016_020b566c.cpp:
+    complete
+    .text       start:0x020b566c end:0x020b568c
+
+src/ov016/func_ov016_020b5a9c.cpp:
+    complete
+    .text       start:0x020b5a9c end:0x020b5abc

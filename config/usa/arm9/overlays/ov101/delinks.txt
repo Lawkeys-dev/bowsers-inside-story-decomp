@@ -23,3 +23,11 @@ src/ov101/func_ov101_020ccfb0.cpp:
 src/ov101/func_ov101_020cbd40.cpp:
     complete
     .text       start:0x020cbd40 end:0x020cbd60
+
+src/ov101/func_ov101_020cea20.cpp:
+    complete
+    .text       start:0x020cea20 end:0x020cea40
+
+src/ov101/func_ov101_020ce918.cpp:
+    complete
+    .text       start:0x020ce918 end:0x020ce97c

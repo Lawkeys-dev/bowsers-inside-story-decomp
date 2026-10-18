@@ -11,3 +11,7 @@ src/ov096/func_ov096_020c9d88.cpp:
 src/ov096/func_ov096_020ca488.cpp:
     complete
     .text       start:0x020ca488 end:0x020ca4a4
+
+src/ov096/func_ov096_020c9df8.cpp:
+    complete
+    .text       start:0x020c9df8 end:0x020c9e18

@@ -782,3 +782,67 @@ src/main/func_02027b0c.cpp:
 src/main/func_02028798.cpp:
     complete
     .text       start:0x02028798 end:0x020287c0
+
+src/main/func_02022918.cpp:
+    complete
+    .text       start:0x02022918 end:0x02022920
+
+src/main/func_02025a64.cpp:
+    complete
+    .text       start:0x02025a64 end:0x02025a8c
+
+src/main/func_02022920.cpp:
+    complete
+    .text       start:0x02022920 end:0x02022928
+
+src/main/func_02025dac.cpp:
+    complete
+    .text       start:0x02025dac end:0x02025db4
+
+src/main/func_02025db4.cpp:
+    complete
+    .text       start:0x02025db4 end:0x02025dbc
+
+src/main/func_02025abc.cpp:
+    complete
+    .text       start:0x02025abc end:0x02025ae4
+
+src/main/func_02026ff8.cpp:
+    complete
+    .text       start:0x02026ff8 end:0x02027020
+
+src/main/func_02027050.cpp:
+    complete
+    .text       start:0x02027050 end:0x02027078
+
+src/main/func_02025a34.cpp:
+    complete
+    .text       start:0x02025a34 end:0x02025a64
+
+src/main/func_02025b74.cpp:
+    complete
+    .text       start:0x02025b74 end:0x02025ba4
+
+src/main/func_02025b3c.cpp:
+    complete
+    .text       start:0x02025b3c end:0x02025b74
+
+src/main/func_02025a8c.cpp:
+    complete
+    .text       start:0x02025a8c end:0x02025abc
+
+src/main/func_02026fc8.cpp:
+    complete
+    .text       start:0x02026fc8 end:0x02026ff8
+
+src/main/func_02027020.cpp:
+    complete
+    .text       start:0x02027020 end:0x02027050
+
+src/main/func_020270d0.cpp:
+    complete
+    .text       start:0x020270d0 end:0x02027108
+
+src/main/func_02027108.cpp:
+    complete
+    .text       start:0x02027108 end:0x02027138

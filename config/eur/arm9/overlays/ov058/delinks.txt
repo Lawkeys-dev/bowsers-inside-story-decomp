@@ -27,3 +27,15 @@ src/ov058/func_ov058_020c9ebc.cpp:
 src/ov058/func_ov058_020ca024.cpp:
     complete
     .text       start:0x020ca024 end:0x020ca06c
+
+src/ov058/func_ov058_020c9768.cpp:
+    complete
+    .text       start:0x020c9768 end:0x020c9790
+
+src/ov058/func_ov058_020c9810.cpp:
+    complete
+    .text       start:0x020c9810 end:0x020c983c
+
+src/ov058/func_ov058_020c983c.cpp:
+    complete
+    .text       start:0x020c983c end:0x020c9868

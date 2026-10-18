@@ -20,3 +20,7 @@ src/ov055/func_ov055_020cf818.cpp:
 src/ov055/func_ov055_020cd820.cpp:
     complete
     .text       start:0x020cd820 end:0x020cd848
+
+src/ov055/func_ov055_020ce534.cpp:
+    complete
+    .text       start:0x020ce534 end:0x020ce570
