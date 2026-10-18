@@ -8,3 +8,107 @@
 src/ov004/func_ov004_0208ac58.cpp:
     complete
     .text       start:0x0208ac58 end:0x0208acbc
+
+src/ov004/func_ov004_020926bc.cpp:
+    complete
+    .text       start:0x020926bc end:0x020926c0
+
+src/ov004/func_ov004_02094c68.cpp:
+    complete
+    .text       start:0x02094c68 end:0x02094c6c
+
+src/ov004/func_ov004_02095628.cpp:
+    complete
+    .text       start:0x02095628 end:0x0209562c
+
+src/ov004/func_ov004_02095954.cpp:
+    complete
+    .text       start:0x02095954 end:0x02095958
+
+src/ov004/func_ov004_020959b8.cpp:
+    complete
+    .text       start:0x020959b8 end:0x020959bc
+
+src/ov004/func_ov004_020ac404.cpp:
+    complete
+    .text       start:0x020ac404 end:0x020ac408
+
+src/ov004/func_ov004_020af4a4.cpp:
+    complete
+    .text       start:0x020af4a4 end:0x020af4a8
+
+src/ov004/func_ov004_020b0dc0.cpp:
+    complete
+    .text       start:0x020b0dc0 end:0x020b0dc4
+
+src/ov004/func_ov004_020b266c.cpp:
+    complete
+    .text       start:0x020b266c end:0x020b2670
+
+src/ov004/func_ov004_020b321c.cpp:
+    complete
+    .text       start:0x020b321c end:0x020b3220
+
+src/ov004/func_ov004_020c1c44.cpp:
+    complete
+    .text       start:0x020c1c44 end:0x020c1c48
+
+src/ov004/func_ov004_020c1c48.cpp:
+    complete
+    .text       start:0x020c1c48 end:0x020c1c4c
+
+src/ov004/func_ov004_020ca31c.cpp:
+    complete
+    .text       start:0x020ca31c end:0x020ca320
+
+src/ov004/func_ov004_020d1068.cpp:
+    complete
+    .text       start:0x020d1068 end:0x020d106c
+
+src/ov004/func_ov004_020d106c.cpp:
+    complete
+    .text       start:0x020d106c end:0x020d1070
+
+src/ov004/func_ov004_020d1070.cpp:
+    complete
+    .text       start:0x020d1070 end:0x020d1074
+
+src/ov004/func_ov004_020d1074.cpp:
+    complete
+    .text       start:0x020d1074 end:0x020d1078
+
+src/ov004/func_ov004_020d1078.cpp:
+    complete
+    .text       start:0x020d1078 end:0x020d107c
+
+src/ov004/func_ov004_020d107c.cpp:
+    complete
+    .text       start:0x020d107c end:0x020d1080
+
+src/ov004/func_ov004_02097b8c.cpp:
+    complete
+    .text       start:0x02097b8c end:0x02097b98
+
+src/ov004/func_ov004_0209c070.cpp:
+    complete
+    .text       start:0x0209c070 end:0x0209c07c
+
+src/ov004/func_ov004_020ac530.cpp:
+    complete
+    .text       start:0x020ac530 end:0x020ac53c
+
+src/ov004/func_ov004_020af6a0.cpp:
+    complete
+    .text       start:0x020af6a0 end:0x020af6ac
+
+src/ov004/func_ov004_020af6ac.cpp:
+    complete
+    .text       start:0x020af6ac end:0x020af6b8
+
+src/ov004/func_ov004_020b09a4.cpp:
+    complete
+    .text       start:0x020b09a4 end:0x020b09b0
+
+src/ov004/func_ov004_020d0a60.cpp:
+    complete
+    .text       start:0x020d0a60 end:0x020d0a6c

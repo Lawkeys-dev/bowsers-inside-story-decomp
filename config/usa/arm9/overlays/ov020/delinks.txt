@@ -4,3 +4,7 @@
     .ctor       start:0x020d46bc end:0x020d46cc kind:rodata align:4
     .data       start:0x020d46e0 end:0x020d5140 kind:data align:32
     .bss        start:0x020d5140 end:0x020d71a0 kind:bss align:32
+
+src/ov020/func_ov020_020d2ce0.cpp:
+    complete
+    .text       start:0x020d2ce0 end:0x020d2d9c

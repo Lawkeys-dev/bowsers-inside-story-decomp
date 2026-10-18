@@ -3,3 +3,51 @@
     .ctor       start:0x0208426c end:0x0208426c kind:rodata align:4
     .data       start:0x02084280 end:0x02085420 kind:data align:32
     .bss        start:0x02085420 end:0x02086440 kind:bss align:32
+
+src/ov125/func_ov125_02078458.cpp:
+    complete
+    .text       start:0x02078458 end:0x0207845c
+
+src/ov125/func_ov125_0207b0c8.cpp:
+    complete
+    .text       start:0x0207b0c8 end:0x0207b0cc
+
+src/ov125/func_ov125_0207b7ec.cpp:
+    complete
+    .text       start:0x0207b7ec end:0x0207b7f0
+
+src/ov125/func_ov125_0207e3d4.cpp:
+    complete
+    .text       start:0x0207e3d4 end:0x0207e3d8
+
+src/ov125/func_ov125_0207e3d8.cpp:
+    complete
+    .text       start:0x0207e3d8 end:0x0207e3dc
+
+src/ov125/func_ov125_0207e40c.cpp:
+    complete
+    .text       start:0x0207e40c end:0x0207e410
+
+src/ov125/func_ov125_0207e428.cpp:
+    complete
+    .text       start:0x0207e428 end:0x0207e42c
+
+src/ov125/func_ov125_0207e468.cpp:
+    complete
+    .text       start:0x0207e468 end:0x0207e46c
+
+src/ov125/func_ov125_0207e494.cpp:
+    complete
+    .text       start:0x0207e494 end:0x0207e498
+
+src/ov125/func_ov125_02080018.cpp:
+    complete
+    .text       start:0x02080018 end:0x0208001c
+
+src/ov125/func_ov125_0208001c.cpp:
+    complete
+    .text       start:0x0208001c end:0x02080030
+
+src/ov125/func_ov125_02080030.cpp:
+    complete
+    .text       start:0x02080030 end:0x0208004c

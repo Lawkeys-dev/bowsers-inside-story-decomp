@@ -8,3 +8,11 @@
 src/ov118/func_ov118_020ebda8.cpp:
     complete
     .text       start:0x020ebda8 end:0x020ebe08
+
+src/ov118/func_ov118_020e63fc.cpp:
+    complete
+    .text       start:0x020e63fc end:0x020e6400
+
+src/ov118/func_ov118_020eb738.cpp:
+    complete
+    .text       start:0x020eb738 end:0x020eb744

@@ -3,3 +3,7 @@
     .ctor       start:0x020cad64 end:0x020cad68 kind:rodata align:4
     .data       start:0x020cad80 end:0x020cada0 kind:data align:32
     .bss        start:0x020cada0 end:0x020cae80 kind:bss align:32
+
+src/ov062/func_ov062_020c97f4.cpp:
+    complete
+    .text       start:0x020c97f4 end:0x020c97f8
