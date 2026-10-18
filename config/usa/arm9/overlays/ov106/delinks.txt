@@ -23,3 +23,7 @@ src/ov106/func_ov106_020cb598.cpp:
 src/ov106/func_ov106_020cb5a8.cpp:
     complete
     .text       start:0x020cb5a8 end:0x020cb5b8
+
+src/ov106/func_ov106_020d3df0.cpp:
+    complete
+    .text       start:0x020d3df0 end:0x020d3e3c

@@ -12,3 +12,15 @@ src/ov061/func_ov061_020ca754.cpp:
 src/ov061/func_ov061_020c9860.cpp:
     complete
     .text       start:0x020c9860 end:0x020c9874
+
+src/ov061/func_ov061_020c9788.cpp:
+    complete
+    .text       start:0x020c9788 end:0x020c97b4
+
+src/ov061/func_ov061_020c97b4.cpp:
+    complete
+    .text       start:0x020c97b4 end:0x020c97e0
+
+src/ov061/func_ov061_020c9a20.cpp:
+    complete
+    .text       start:0x020c9a20 end:0x020c9a68

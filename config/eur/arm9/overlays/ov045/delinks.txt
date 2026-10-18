@@ -19,3 +19,23 @@ src/ov045/func_ov045_020cc3dc.cpp:
 src/ov045/func_ov045_020cc3ec.cpp:
     complete
     .text       start:0x020cc3ec end:0x020cc3fc
+
+src/ov045/func_ov045_020cc3fc.cpp:
+    complete
+    .text       start:0x020cc3fc end:0x020cc414
+
+src/ov045/func_ov045_020cc414.cpp:
+    complete
+    .text       start:0x020cc414 end:0x020cc42c
+
+src/ov045/func_ov045_020cc42c.cpp:
+    complete
+    .text       start:0x020cc42c end:0x020cc444
+
+src/ov045/func_ov045_020cc444.cpp:
+    complete
+    .text       start:0x020cc444 end:0x020cc45c
+
+src/ov045/func_ov045_020cc4b4.cpp:
+    complete
+    .text       start:0x020cc4b4 end:0x020cc4cc

@@ -48,3 +48,11 @@ src/ov121/func_ov121_020e7890.cpp:
 src/ov121/func_ov121_020eb640.cpp:
     complete
     .text       start:0x020eb640 end:0x020eb650
+
+src/ov121/func_ov121_020e649c.cpp:
+    complete
+    .text       start:0x020e649c end:0x020e64dc
+
+src/ov121/func_ov121_020e64dc.cpp:
+    complete
+    .text       start:0x020e64dc end:0x020e6524

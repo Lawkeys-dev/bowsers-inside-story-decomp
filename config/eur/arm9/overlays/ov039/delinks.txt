@@ -19,3 +19,7 @@ src/ov039/func_ov039_020cbe40.cpp:
 src/ov039/func_ov039_020cbe50.cpp:
     complete
     .text       start:0x020cbe50 end:0x020cbe60
+
+src/ov039/func_ov039_020d15b8.cpp:
+    complete
+    .text       start:0x020d15b8 end:0x020d1604

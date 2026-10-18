@@ -31,3 +31,7 @@ src/ov113/func_ov113_020cb574.cpp:
 src/ov113/func_ov113_020cb584.cpp:
     complete
     .text       start:0x020cb584 end:0x020cb594
+
+src/ov113/func_ov113_020cb4d4.cpp:
+    complete
+    .text       start:0x020cb4d4 end:0x020cb4f0

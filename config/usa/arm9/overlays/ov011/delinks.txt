@@ -568,3 +568,7 @@ src/ov011/func_ov011_0206b4a8.cpp:
 src/ov011/func_ov011_0206ca7c.cpp:
     complete
     .text       start:0x0206ca7c end:0x0206ca90
+
+src/ov011/func_ov011_0206653c.cpp:
+    complete
+    .text       start:0x0206653c end:0x02066564

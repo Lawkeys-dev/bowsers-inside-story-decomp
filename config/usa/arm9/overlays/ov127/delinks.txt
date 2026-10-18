@@ -71,3 +71,7 @@ src/ov127/func_ov127_0206b638.cpp:
 src/ov127/func_ov127_0206a30c.cpp:
     complete
     .text       start:0x0206a30c end:0x0206a318
+
+src/ov127/func_ov127_0206b0e8.cpp:
+    complete
+    .text       start:0x0206b0e8 end:0x0206b10c

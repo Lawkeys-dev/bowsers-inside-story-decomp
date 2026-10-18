@@ -36,3 +36,19 @@ src/ov056/func_ov056_020d14ec.cpp:
 src/ov056/func_ov056_020d201c.cpp:
     complete
     .text       start:0x020d201c end:0x020d202c
+
+src/ov056/func_ov056_020cbe40.cpp:
+    complete
+    .text       start:0x020cbe40 end:0x020cbe80
+
+src/ov056/func_ov056_020d133c.cpp:
+    complete
+    .text       start:0x020d133c end:0x020d137c
+
+src/ov056/func_ov056_020cfee8.cpp:
+    complete
+    .text       start:0x020cfee8 end:0x020cff30
+
+src/ov056/func_ov056_020d207c.cpp:
+    complete
+    .text       start:0x020d207c end:0x020d20c4

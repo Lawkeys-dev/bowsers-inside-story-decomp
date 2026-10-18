@@ -135,3 +135,7 @@ src/ov125/func_ov125_02078e80.cpp:
 src/ov125/func_ov125_0207e3f0.cpp:
     complete
     .text       start:0x0207d9bc end:0x0207d9d0
+
+src/ov125/func_ov125_0207fff4.cpp:
+    complete
+    .text       start:0x0207f5c0 end:0x0207f5e4

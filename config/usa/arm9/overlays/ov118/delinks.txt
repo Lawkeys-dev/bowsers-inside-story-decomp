@@ -56,3 +56,31 @@ src/ov118/func_ov118_020f1538.cpp:
 src/ov118/func_ov118_020f3fb4.cpp:
     complete
     .text       start:0x020f3fb4 end:0x020f3fc8
+
+src/ov118/func_ov118_020ec8b8.cpp:
+    complete
+    .text       start:0x020ec8b8 end:0x020ec904
+
+src/ov118/func_ov118_020ed768.cpp:
+    complete
+    .text       start:0x020ed768 end:0x020ed7cc
+
+src/ov118/func_ov118_020f4354.cpp:
+    complete
+    .text       start:0x020f4354 end:0x020f43b8
+
+src/ov118/func_ov118_020f3e20.cpp:
+    complete
+    .text       start:0x020f3e20 end:0x020f3e4c
+
+src/ov118/func_ov118_020f3e4c.cpp:
+    complete
+    .text       start:0x020f3e4c end:0x020f3e8c
+
+src/ov118/func_ov118_020f4730.cpp:
+    complete
+    .text       start:0x020f4730 end:0x020f4770
+
+src/ov118/func_ov118_020e2d08.cpp:
+    complete
+    .text       start:0x020e2d08 end:0x020e2d30

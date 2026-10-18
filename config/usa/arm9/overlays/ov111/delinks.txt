@@ -23,3 +23,7 @@ src/ov111/func_ov111_020cb4d8.cpp:
 src/ov111/func_ov111_020cb4e8.cpp:
     complete
     .text       start:0x020cb4e8 end:0x020cb4f8
+
+src/ov111/func_ov111_020d2ca0.cpp:
+    complete
+    .text       start:0x020d2ca0 end:0x020d2cec

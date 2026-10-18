@@ -135,3 +135,13 @@ src/ov003/func_ov003_0207359c.cpp:
 src/ov003/func_ov003_020735a8.cpp:
     complete
     .text       start:0x020735a8 end:0x020735b4
+
+src/ov003/func_ov003_0206b0cc.cpp:
+    complete
+    .text       start:0x0206b0cc end:0x0206b0f0
+
+src/ov003/func_ov003_0206b044.cpp:
+    .text       start:0x0206b044 end:0x0206b088
+
+src/ov003/func_ov003_0206b088.cpp:
+    .text       start:0x0206b088 end:0x0206b0cc

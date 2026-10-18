@@ -19,3 +19,19 @@ src/ov078/func_ov078_020c94b8.cpp:
 src/ov078/func_ov078_020c93f4.cpp:
     complete
     .text       start:0x020c93f4 end:0x020c9428
+
+src/ov078/func_ov078_020c9748.cpp:
+    complete
+    .text       start:0x020c9748 end:0x020c9764
+
+src/ov078/func_ov078_020c9b78.cpp:
+    complete
+    .text       start:0x020c9b78 end:0x020c9b98
+
+src/ov078/func_ov078_020c9ca0.cpp:
+    complete
+    .text       start:0x020c9ca0 end:0x020c9cc0
+
+src/ov078/func_ov078_020ca208.cpp:
+    complete
+    .text       start:0x020ca208 end:0x020ca228

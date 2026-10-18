@@ -48,3 +48,11 @@ src/ov022/func_ov022_020db1fc.cpp:
 src/ov022/func_ov022_020dbff8.cpp:
     complete
     .text       start:0x020dbff8 end:0x020dc008
+
+src/ov022/func_ov022_020db014.cpp:
+    complete
+    .text       start:0x020db014 end:0x020db054
+
+src/ov022/func_ov022_020dc058.cpp:
+    complete
+    .text       start:0x020dc058 end:0x020dc0a0

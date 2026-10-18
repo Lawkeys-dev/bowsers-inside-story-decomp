@@ -16,3 +16,31 @@ src/ov060/func_ov060_020cb950.cpp:
 src/ov060/func_ov060_020ca498.cpp:
     complete
     .text       start:0x020ca498 end:0x020ca4ac
+
+src/ov060/func_ov060_020cb39c.cpp:
+    complete
+    .text       start:0x020cb39c end:0x020cb3dc
+
+src/ov060/func_ov060_020cb04c.cpp:
+    complete
+    .text       start:0x020cb04c end:0x020cb0b0
+
+src/ov060/func_ov060_020cb370.cpp:
+    complete
+    .text       start:0x020cb370 end:0x020cb39c
+
+src/ov060/func_ov060_020c9790.cpp:
+    complete
+    .text       start:0x020c9790 end:0x020c97bc
+
+src/ov060/func_ov060_020c97bc.cpp:
+    complete
+    .text       start:0x020c97bc end:0x020c97e8
+
+src/ov060/func_ov060_020ca694.cpp:
+    complete
+    .text       start:0x020ca694 end:0x020ca6dc
+
+src/ov060/func_ov060_020cab0c.cpp:
+    complete
+    .text       start:0x020cab0c end:0x020cab54

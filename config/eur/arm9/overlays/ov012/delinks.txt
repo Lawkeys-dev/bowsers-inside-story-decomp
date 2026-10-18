@@ -747,3 +747,31 @@ src/ov012/func_ov012_020856c4.cpp:
 src/ov012/func_ov012_0207e47c.cpp:
     complete
     .text       start:0x0207e47c end:0x0207e488
+
+src/ov012/func_ov012_0207e468.cpp:
+    complete
+    .text       start:0x0207e468 end:0x0207e47c
+
+src/ov012/func_ov012_02079d1c.cpp:
+    complete
+    .text       start:0x02079d1c end:0x02079d3c
+
+src/ov012/func_ov012_02079ce4.cpp:
+    complete
+    .text       start:0x02079ce4 end:0x02079d1c
+
+src/ov012/func_ov012_02079da8.cpp:
+    complete
+    .text       start:0x02079da8 end:0x02079de0
+
+src/ov012/func_ov012_02079e78.cpp:
+    complete
+    .text       start:0x02079e78 end:0x02079eb0
+
+src/ov012/func_ov012_02079de0.cpp:
+    complete
+    .text       start:0x02079de0 end:0x02079e00
+
+src/ov012/func_ov012_02079eb0.cpp:
+    complete
+    .text       start:0x02079eb0 end:0x02079ed0

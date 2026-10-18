@@ -19,3 +19,11 @@ src/ov040/func_ov040_020cb464.cpp:
 src/ov040/func_ov040_020cb474.cpp:
     complete
     .text       start:0x020cb474 end:0x020cb484
+
+src/ov040/func_ov040_020d2c10.cpp:
+    complete
+    .text       start:0x020d2c10 end:0x020d2c5c
+
+src/ov040/func_ov040_020d2d20.cpp:
+    complete
+    .text       start:0x020d2d20 end:0x020d2d6c

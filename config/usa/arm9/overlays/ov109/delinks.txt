@@ -27,3 +27,7 @@ src/ov109/func_ov109_020cb988.cpp:
 src/ov109/func_ov109_020cb9b8.cpp:
     complete
     .text       start:0x020cb9b8 end:0x020cb9c8
+
+src/ov109/func_ov109_020cba20.cpp:
+    complete
+    .text       start:0x020cba20 end:0x020cba38

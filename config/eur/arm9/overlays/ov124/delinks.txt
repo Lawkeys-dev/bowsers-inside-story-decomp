@@ -432,3 +432,27 @@ src/ov124/func_ov124_02098fd4.cpp:
 src/ov124/func_ov124_02098fec.cpp:
     complete
     .text       start:0x02098fec end:0x02099004
+
+src/ov124/func_ov124_0209ac9c.cpp:
+    complete
+    .text       start:0x0209ac9c end:0x0209acb0
+
+src/ov124/func_ov124_0209aff4.cpp:
+    complete
+    .text       start:0x0209aff4 end:0x0209b008
+
+src/ov124/func_ov124_0209b008.cpp:
+    complete
+    .text       start:0x0209b008 end:0x0209b01c
+
+src/ov124/func_ov124_0209b01c.cpp:
+    complete
+    .text       start:0x0209b01c end:0x0209b030
+
+src/ov124/func_ov124_0209b10c.cpp:
+    complete
+    .text       start:0x0209b10c end:0x0209b144
+
+src/ov124/func_ov124_0209b144.cpp:
+    complete
+    .text       start:0x0209b144 end:0x0209b164
