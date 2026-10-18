@@ -2,3 +2,7 @@
     .init       start:0x020ca154 end:0x020ca1bc kind:code align:4
     .ctor       start:0x020ca1bc end:0x020ca1c0 kind:rodata align:4
     .bss        start:0x020ca1e0 end:0x020ca3e0 kind:bss align:32
+
+src/ov076/func_ov076_020c8fe0.cpp:
+    complete
+    .text       start:0x020c8fe0 end:0x020c8fe4
