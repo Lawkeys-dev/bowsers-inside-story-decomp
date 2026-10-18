@@ -412,3 +412,15 @@ src/ov004/func_ov004_020d11c0.cpp:
 src/ov004/func_ov004_020d1228.cpp:
     complete
     .text       start:0x020d1228 end:0x020d1258
+
+src/ov004/func_ov004_020b0e38.cpp:
+    complete
+    .text       start:0x020b0e38 end:0x020b0e44
+
+src/ov004/func_ov004_020b26e4.cpp:
+    complete
+    .text       start:0x020b26e4 end:0x020b26f0
+
+src/ov004/func_ov004_020b3294.cpp:
+    complete
+    .text       start:0x020b3294 end:0x020b32a0

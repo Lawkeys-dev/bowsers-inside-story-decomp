@@ -36,3 +36,7 @@ src/ov061/func_ov061_020c9808.cpp:
 src/ov061/func_ov061_020c9834.cpp:
     complete
     .text       start:0x020c9834 end:0x020c9860
+
+src/ov061/func_ov061_020ca544.cpp:
+    complete
+    .text       start:0x020ca544 end:0x020ca594

@@ -520,3 +520,47 @@ src/ov123/func_ov123_0209e89c.cpp:
 src/ov123/func_ov123_0209e8d4.cpp:
     complete
     .text       start:0x0209e8d4 end:0x0209e8f4
+
+src/ov123/func_ov123_0209c3f4.cpp:
+    complete
+    .text       start:0x0209c3f4 end:0x0209c404
+
+src/ov123/func_ov123_0209a72c.cpp:
+    complete
+    .text       start:0x0209a72c end:0x0209a740
+
+src/ov123/func_ov123_0209c254.cpp:
+    complete
+    .text       start:0x0209c254 end:0x0209c268
+
+src/ov123/func_ov123_0207db18.cpp:
+    complete
+    .text       start:0x0207db18 end:0x0207db28
+
+src/ov123/func_ov123_0209c954.cpp:
+    complete
+    .text       start:0x0209c954 end:0x0209c96c
+
+src/ov123/func_ov123_0207ca20.cpp:
+    complete
+    .text       start:0x0207ca20 end:0x0207ca34
+
+src/ov123/func_ov123_0209a7f4.cpp:
+    complete
+    .text       start:0x0209a7f4 end:0x0209a808
+
+src/ov123/func_ov123_0209c914.cpp:
+    complete
+    .text       start:0x0209c914 end:0x0209c928
+
+src/ov123/func_ov123_0209c2d8.cpp:
+    complete
+    .text       start:0x0209c2d8 end:0x0209c2ec
+
+src/ov123/func_ov123_0209c35c.cpp:
+    complete
+    .text       start:0x0209c35c end:0x0209c370
+
+src/ov123/func_ov123_0209c8a8.cpp:
+    complete
+    .text       start:0x0209c8a8 end:0x0209c8b8

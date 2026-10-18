@@ -472,3 +472,19 @@ src/ov124/func_ov124_02086c04.cpp:
 src/ov124/func_ov124_0208d200.cpp:
     complete
     .text       start:0x0208d200 end:0x0208d240
+
+src/ov124/func_ov124_0207f37c.cpp:
+    complete
+    .text       start:0x0207f37c end:0x0207f38c
+
+src/ov124/func_ov124_020990c8.cpp:
+    complete
+    .text       start:0x020990c8 end:0x020990e0
+
+src/ov124/func_ov124_0207ef90.cpp:
+    complete
+    .text       start:0x0207ef90 end:0x0207efa4
+
+src/ov124/func_ov124_02099074.cpp:
+    complete
+    .text       start:0x02099074 end:0x02099084

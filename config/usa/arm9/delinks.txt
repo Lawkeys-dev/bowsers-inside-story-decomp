@@ -846,3 +846,23 @@ src/main/func_020270d0.cpp:
 src/main/func_02027108.cpp:
     complete
     .text       start:0x02027108 end:0x02027138
+
+src/main/func_02015000.cpp:
+    complete
+    .text       start:0x02015000 end:0x0201500c
+
+src/main/func_02020744.cpp:
+    complete
+    .text       start:0x02020744 end:0x02020754
+
+src/main/func_0201500c.cpp:
+    complete
+    .text       start:0x0201500c end:0x02015018
+
+src/main/func_02020774.cpp:
+    complete
+    .text       start:0x02020774 end:0x02020784
+
+src/main/func_02020930.cpp:
+    complete
+    .text       start:0x02020930 end:0x02020940

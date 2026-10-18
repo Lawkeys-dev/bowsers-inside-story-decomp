@@ -444,3 +444,35 @@ src/ov122/func_ov122_0206ef5c.cpp:
 src/ov122/func_ov122_020729c0.cpp:
     complete
     .text       start:0x020729c0 end:0x020729e4
+
+src/ov122/func_ov122_0206bbe0.cpp:
+    complete
+    .text       start:0x0206bbe0 end:0x0206bbf0
+
+src/ov122/func_ov122_0206d848.cpp:
+    complete
+    .text       start:0x0206d848 end:0x0206d858
+
+src/ov122/func_ov122_0206d92c.cpp:
+    complete
+    .text       start:0x0206d92c end:0x0206d940
+
+src/ov122/func_ov122_0206d8dc.cpp:
+    complete
+    .text       start:0x0206d8dc end:0x0206d8f4
+
+src/ov122/func_ov122_0206db5c.cpp:
+    complete
+    .text       start:0x0206db5c end:0x0206dbb4
+
+src/ov122/func_ov122_0206d9b4.cpp:
+    complete
+    .text       start:0x0206d9b4 end:0x0206d9c4
+
+src/ov122/func_ov122_0206bdc8.cpp:
+    complete
+    .text       start:0x0206bdc8 end:0x0206bdd8
+
+src/ov122/func_ov122_0206e6cc.cpp:
+    complete
+    .text       start:0x0206e6cc end:0x0206e6dc

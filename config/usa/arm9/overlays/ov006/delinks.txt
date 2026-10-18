@@ -519,3 +519,7 @@ src/ov006/func_ov006_02113b70.cpp:
 src/ov006/func_ov006_02123f28.cpp:
     complete
     .text       start:0x02123f28 end:0x02123f38
+
+src/ov006/func_ov006_02113a80.cpp:
+    complete
+    .text       start:0x02113a80 end:0x02113ad8

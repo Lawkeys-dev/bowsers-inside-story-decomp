@@ -70,3 +70,11 @@ src/ov019/func_ov019_020cbc6c.cpp:
 src/ov019/func_ov019_020cbeb4.cpp:
     complete
     .text       start:0x020cbeb4 end:0x020cbedc
+
+src/ov019/func_ov019_020ccf68.cpp:
+    complete
+    .text       start:0x020ccf68 end:0x020ccfc0
+
+src/ov019/func_ov019_020ccda8.cpp:
+    complete
+    .text       start:0x020ccda8 end:0x020ccdb8
