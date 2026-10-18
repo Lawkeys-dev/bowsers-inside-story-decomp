@@ -24,3 +24,11 @@ src/ov082/func_ov082_020cb97c.cpp:
 src/ov082/func_ov082_020c9dc0.cpp:
     complete
     .text       start:0x020c9dc0 end:0x020c9df4
+
+src/ov082/func_ov082_020cba8c.cpp:
+    complete
+    .text       start:0x020cba8c end:0x020cbaa0
+
+src/ov082/func_ov082_020cbaa0.cpp:
+    complete
+    .text       start:0x020cbaa0 end:0x020cbabc

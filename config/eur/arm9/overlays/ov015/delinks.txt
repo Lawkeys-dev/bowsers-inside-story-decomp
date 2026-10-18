@@ -27,3 +27,35 @@ src/ov015/func_ov015_020aa660.cpp:
 src/ov015/func_ov015_020aa664.cpp:
     complete
     .text       start:0x020aa664 end:0x020aa668
+
+src/ov015/func_ov015_0209f3c0.cpp:
+    complete
+    .text       start:0x0209f3c0 end:0x0209f3c8
+
+src/ov015/func_ov015_0209f3c8.cpp:
+    complete
+    .text       start:0x0209f3c8 end:0x0209f3d0
+
+src/ov015/func_ov015_0209f3d0.cpp:
+    complete
+    .text       start:0x0209f3d0 end:0x0209f3d8
+
+src/ov015/func_ov015_0209fa34.cpp:
+    complete
+    .text       start:0x0209fa34 end:0x0209fa48
+
+src/ov015/func_ov015_0209fa48.cpp:
+    complete
+    .text       start:0x0209fa48 end:0x0209fa64
+
+src/ov015/func_ov015_0209fa64.cpp:
+    complete
+    .text       start:0x0209fa64 end:0x0209fa78
+
+src/ov015/func_ov015_020a7ed4.cpp:
+    complete
+    .text       start:0x020a7ed4 end:0x020a7edc
+
+src/ov015/func_ov015_020acaf4.cpp:
+    complete
+    .text       start:0x020acaf4 end:0x020acafc

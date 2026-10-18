@@ -27,3 +27,11 @@ src/ov014/func_ov014_020983f4.cpp:
 src/ov014/func_ov014_02099ae8.cpp:
     complete
     .text       start:0x02099ae8 end:0x02099aec
+
+src/ov014/func_ov014_020951c4.cpp:
+    complete
+    .text       start:0x020951c4 end:0x020951cc
+
+src/ov014/func_ov014_02098dec.cpp:
+    complete
+    .text       start:0x02098dec end:0x02098e00

@@ -51,3 +51,79 @@ src/ov125/func_ov125_0208001c.cpp:
 src/ov125/func_ov125_02080030.cpp:
     complete
     .text       start:0x0207f5fc end:0x0207f618
+
+src/ov125/func_ov125_0207845c.cpp:
+    complete
+    .text       start:0x0207845c end:0x02078474
+
+src/ov125/func_ov125_0207b720.cpp:
+    complete
+    .text       start:0x0207acec end:0x0207acf4
+
+src/ov125/func_ov125_0207b7d8.cpp:
+    complete
+    .text       start:0x0207ada4 end:0x0207adb8
+
+src/ov125/func_ov125_0207bb28.cpp:
+    complete
+    .text       start:0x0207b0f4 end:0x0207b0fc
+
+src/ov125/func_ov125_0207d7e8.cpp:
+    complete
+    .text       start:0x0207cdb4 end:0x0207cdc8
+
+src/ov125/func_ov125_0207d7fc.cpp:
+    complete
+    .text       start:0x0207cdc8 end:0x0207cde4
+
+src/ov125/func_ov125_0207d818.cpp:
+    complete
+    .text       start:0x0207cde4 end:0x0207ce00
+
+src/ov125/func_ov125_0207e404.cpp:
+    complete
+    .text       start:0x0207d9d0 end:0x0207d9d8
+
+src/ov125/func_ov125_0207e410.cpp:
+    complete
+    .text       start:0x0207d9dc end:0x0207d9e4
+
+src/ov125/func_ov125_0207e418.cpp:
+    complete
+    .text       start:0x0207d9e4 end:0x0207d9ec
+
+src/ov125/func_ov125_0207e420.cpp:
+    complete
+    .text       start:0x0207d9ec end:0x0207d9f4
+
+src/ov125/func_ov125_0207e42c.cpp:
+    complete
+    .text       start:0x0207d9f8 end:0x0207da0c
+
+src/ov125/func_ov125_0207e440.cpp:
+    complete
+    .text       start:0x0207da0c end:0x0207da20
+
+src/ov125/func_ov125_0207e454.cpp:
+    complete
+    .text       start:0x0207da20 end:0x0207da34
+
+src/ov125/func_ov125_0207e46c.cpp:
+    complete
+    .text       start:0x0207da38 end:0x0207da4c
+
+src/ov125/func_ov125_0207e480.cpp:
+    complete
+    .text       start:0x0207da4c end:0x0207da60
+
+src/ov125/func_ov125_0207edbc.cpp:
+    complete
+    .text       start:0x0207e388 end:0x0207e39c
+
+src/ov125/func_ov125_0207efa8.cpp:
+    complete
+    .text       start:0x0207e574 end:0x0207e590
+
+src/ov125/func_ov125_0208004c.cpp:
+    complete
+    .text       start:0x0207f618 end:0x0207f62c

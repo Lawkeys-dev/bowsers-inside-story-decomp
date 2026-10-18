@@ -244,3 +244,235 @@ src/ov123/func_ov123_0209f2f8.cpp:
 src/ov123/func_ov123_0209b804.cpp:
     complete
     .text       start:0x0209b804 end:0x0209b838
+
+src/ov123/func_ov123_02076704.cpp:
+    complete
+    .text       start:0x02076704 end:0x0207670c
+
+src/ov123/func_ov123_0207c424.cpp:
+    complete
+    .text       start:0x0207c424 end:0x0207c42c
+
+src/ov123/func_ov123_0207c42c.cpp:
+    complete
+    .text       start:0x0207c42c end:0x0207c434
+
+src/ov123/func_ov123_0207c560.cpp:
+    complete
+    .text       start:0x0207c560 end:0x0207c568
+
+src/ov123/func_ov123_0207c6b0.cpp:
+    complete
+    .text       start:0x0207c6b0 end:0x0207c6b8
+
+src/ov123/func_ov123_0207c6b8.cpp:
+    complete
+    .text       start:0x0207c6b8 end:0x0207c6c0
+
+src/ov123/func_ov123_0207d3b0.cpp:
+    complete
+    .text       start:0x0207d3b0 end:0x0207d3b8
+
+src/ov123/func_ov123_0207d3b8.cpp:
+    complete
+    .text       start:0x0207d3b8 end:0x0207d3c0
+
+src/ov123/func_ov123_0207d3c0.cpp:
+    complete
+    .text       start:0x0207d3c0 end:0x0207d3c8
+
+src/ov123/func_ov123_0207de28.cpp:
+    complete
+    .text       start:0x0207de28 end:0x0207de30
+
+src/ov123/func_ov123_02081314.cpp:
+    complete
+    .text       start:0x02081314 end:0x02081328
+
+src/ov123/func_ov123_02081390.cpp:
+    complete
+    .text       start:0x02081390 end:0x020813a4
+
+src/ov123/func_ov123_020816c4.cpp:
+    complete
+    .text       start:0x020816c4 end:0x020816d8
+
+src/ov123/func_ov123_020818bc.cpp:
+    complete
+    .text       start:0x020818bc end:0x020818c4
+
+src/ov123/func_ov123_020818c4.cpp:
+    complete
+    .text       start:0x020818c4 end:0x020818cc
+
+src/ov123/func_ov123_02083148.cpp:
+    complete
+    .text       start:0x02083148 end:0x02083150
+
+src/ov123/func_ov123_020831ac.cpp:
+    complete
+    .text       start:0x020831ac end:0x020831c0
+
+src/ov123/func_ov123_0208a7c4.cpp:
+    complete
+    .text       start:0x0208a7c4 end:0x0208a7cc
+
+src/ov123/func_ov123_020963ac.cpp:
+    complete
+    .text       start:0x020963ac end:0x020963c8
+
+src/ov123/func_ov123_020963c8.cpp:
+    complete
+    .text       start:0x020963c8 end:0x020963e4
+
+src/ov123/func_ov123_020963e4.cpp:
+    complete
+    .text       start:0x020963e4 end:0x020963f8
+
+src/ov123/func_ov123_020969f4.cpp:
+    complete
+    .text       start:0x020969f4 end:0x02096a10
+
+src/ov123/func_ov123_02096a10.cpp:
+    complete
+    .text       start:0x02096a10 end:0x02096a2c
+
+src/ov123/func_ov123_020979f4.cpp:
+    complete
+    .text       start:0x020979f4 end:0x020979fc
+
+src/ov123/func_ov123_020979fc.cpp:
+    complete
+    .text       start:0x020979fc end:0x02097a04
+
+src/ov123/func_ov123_02097a04.cpp:
+    complete
+    .text       start:0x02097a04 end:0x02097a0c
+
+src/ov123/func_ov123_02097a14.cpp:
+    complete
+    .text       start:0x02097a14 end:0x02097a1c
+
+src/ov123/func_ov123_02097a1c.cpp:
+    complete
+    .text       start:0x02097a1c end:0x02097a24
+
+src/ov123/func_ov123_02097a24.cpp:
+    complete
+    .text       start:0x02097a24 end:0x02097a2c
+
+src/ov123/func_ov123_02097a2c.cpp:
+    complete
+    .text       start:0x02097a2c end:0x02097a34
+
+src/ov123/func_ov123_02097a40.cpp:
+    complete
+    .text       start:0x02097a40 end:0x02097a48
+
+src/ov123/func_ov123_02097a48.cpp:
+    complete
+    .text       start:0x02097a48 end:0x02097a50
+
+src/ov123/func_ov123_02097a50.cpp:
+    complete
+    .text       start:0x02097a50 end:0x02097a58
+
+src/ov123/func_ov123_02097a60.cpp:
+    complete
+    .text       start:0x02097a60 end:0x02097a68
+
+src/ov123/func_ov123_02097a68.cpp:
+    complete
+    .text       start:0x02097a68 end:0x02097a70
+
+src/ov123/func_ov123_02097a70.cpp:
+    complete
+    .text       start:0x02097a70 end:0x02097a78
+
+src/ov123/func_ov123_02097a78.cpp:
+    complete
+    .text       start:0x02097a78 end:0x02097a80
+
+src/ov123/func_ov123_02097a8c.cpp:
+    complete
+    .text       start:0x02097a8c end:0x02097a94
+
+src/ov123/func_ov123_02097a94.cpp:
+    complete
+    .text       start:0x02097a94 end:0x02097a9c
+
+src/ov123/func_ov123_02097a9c.cpp:
+    complete
+    .text       start:0x02097a9c end:0x02097aa4
+
+src/ov123/func_ov123_02097aa8.cpp:
+    complete
+    .text       start:0x02097aa8 end:0x02097abc
+
+src/ov123/func_ov123_02097abc.cpp:
+    complete
+    .text       start:0x02097abc end:0x02097ad0
+
+src/ov123/func_ov123_02097ad0.cpp:
+    complete
+    .text       start:0x02097ad0 end:0x02097ae4
+
+src/ov123/func_ov123_02097ae8.cpp:
+    complete
+    .text       start:0x02097ae8 end:0x02097afc
+
+src/ov123/func_ov123_02097b00.cpp:
+    complete
+    .text       start:0x02097b00 end:0x02097b14
+
+src/ov123/func_ov123_02097b14.cpp:
+    complete
+    .text       start:0x02097b14 end:0x02097b28
+
+src/ov123/func_ov123_02097b2c.cpp:
+    complete
+    .text       start:0x02097b2c end:0x02097b40
+
+src/ov123/func_ov123_02097b40.cpp:
+    complete
+    .text       start:0x02097b40 end:0x02097b54
+
+src/ov123/func_ov123_02097b54.cpp:
+    complete
+    .text       start:0x02097b54 end:0x02097b5c
+
+src/ov123/func_ov123_02097b5c.cpp:
+    complete
+    .text       start:0x02097b5c end:0x02097b64
+
+src/ov123/func_ov123_0209a02c.cpp:
+    complete
+    .text       start:0x0209a02c end:0x0209a040
+
+src/ov123/func_ov123_0209a040.cpp:
+    complete
+    .text       start:0x0209a040 end:0x0209a05c
+
+src/ov123/func_ov123_0209c928.cpp:
+    complete
+    .text       start:0x0209c928 end:0x0209c930
+
+src/ov123/func_ov123_0209c96c.cpp:
+    complete
+    .text       start:0x0209c96c end:0x0209c974
+
+src/ov123/func_ov123_0209c9b4.cpp:
+    complete
+    .text       start:0x0209c9b4 end:0x0209c9c8
+
+src/ov123/func_ov123_0209c9c8.cpp:
+    complete
+    .text       start:0x0209c9c8 end:0x0209c9e4
+
+src/ov123/func_ov123_0209c9e4.cpp:
+    complete
+    .text       start:0x0209c9e4 end:0x0209c9f8
+
+src/ov123/func_ov123_0209e804.cpp:
+    complete
+    .text       start:0x0209e804 end:0x0209e814

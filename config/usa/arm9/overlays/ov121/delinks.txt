@@ -16,3 +16,7 @@ src/ov121/func_ov121_020eb2e4.cpp:
 src/ov121/func_ov121_020e537c.cpp:
     complete
     .text       start:0x020e537c end:0x020e5388
+
+src/ov121/func_ov121_020e6424.cpp:
+    complete
+    .text       start:0x020e6424 end:0x020e6438

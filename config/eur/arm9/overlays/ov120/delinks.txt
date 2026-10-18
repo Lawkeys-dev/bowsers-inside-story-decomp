@@ -31,3 +31,39 @@ src/ov120/func_ov120_020d7258.cpp:
 src/ov120/func_ov120_020d9c78.cpp:
     complete
     .text       start:0x020d9c78 end:0x020d9c7c
+
+src/ov120/func_ov120_020d4374.cpp:
+    complete
+    .text       start:0x020d4374 end:0x020d4388
+
+src/ov120/func_ov120_020d4388.cpp:
+    complete
+    .text       start:0x020d4388 end:0x020d439c
+
+src/ov120/func_ov120_020d439c.cpp:
+    complete
+    .text       start:0x020d439c end:0x020d43b0
+
+src/ov120/func_ov120_020d43b0.cpp:
+    complete
+    .text       start:0x020d43b0 end:0x020d43c4
+
+src/ov120/func_ov120_020d8484.cpp:
+    complete
+    .text       start:0x020d8484 end:0x020d84a0
+
+src/ov120/func_ov120_020d84a0.cpp:
+    complete
+    .text       start:0x020d84a0 end:0x020d84bc
+
+src/ov120/func_ov120_020d84bc.cpp:
+    complete
+    .text       start:0x020d84bc end:0x020d84d8
+
+src/ov120/func_ov120_020d84d8.cpp:
+    complete
+    .text       start:0x020d84d8 end:0x020d84f4
+
+src/ov120/func_ov120_020da440.cpp:
+    complete
+    .text       start:0x020da440 end:0x020da448

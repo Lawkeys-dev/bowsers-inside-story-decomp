@@ -23,3 +23,47 @@ src/ov016/func_ov016_020af754.cpp:
 src/ov016/func_ov016_020b4544.cpp:
     complete
     .text       start:0x020b4544 end:0x020b4550
+
+src/ov016/func_ov016_020ad800.cpp:
+    complete
+    .text       start:0x020ad800 end:0x020ad808
+
+src/ov016/func_ov016_020ae238.cpp:
+    complete
+    .text       start:0x020ae238 end:0x020ae240
+
+src/ov016/func_ov016_020af758.cpp:
+    complete
+    .text       start:0x020af758 end:0x020af760
+
+src/ov016/func_ov016_020af760.cpp:
+    complete
+    .text       start:0x020af760 end:0x020af768
+
+src/ov016/func_ov016_020af93c.cpp:
+    complete
+    .text       start:0x020af93c end:0x020af944
+
+src/ov016/func_ov016_020b0d6c.cpp:
+    complete
+    .text       start:0x020b0d6c end:0x020b0d80
+
+src/ov016/func_ov016_020b0db4.cpp:
+    complete
+    .text       start:0x020b0db4 end:0x020b0dbc
+
+src/ov016/func_ov016_020b474c.cpp:
+    complete
+    .text       start:0x020b474c end:0x020b4754
+
+src/ov016/func_ov016_020b4754.cpp:
+    complete
+    .text       start:0x020b4754 end:0x020b475c
+
+src/ov016/func_ov016_020b4b3c.cpp:
+    complete
+    .text       start:0x020b4b3c end:0x020b4b44
+
+src/ov016/func_ov016_020b51a4.cpp:
+    complete
+    .text       start:0x020b51a4 end:0x020b51b8

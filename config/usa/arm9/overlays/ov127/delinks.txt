@@ -27,3 +27,31 @@ src/ov127/func_ov127_0206b19c.cpp:
 src/ov127/func_ov127_0206c0c0.cpp:
     complete
     .text       start:0x0206c0c0 end:0x0206c0c4
+
+src/ov127/func_ov127_02069d74.cpp:
+    complete
+    .text       start:0x02069d74 end:0x02069d88
+
+src/ov127/func_ov127_02069d88.cpp:
+    complete
+    .text       start:0x02069d88 end:0x02069d9c
+
+src/ov127/func_ov127_02069d9c.cpp:
+    complete
+    .text       start:0x02069d9c end:0x02069db0
+
+src/ov127/func_ov127_0206af34.cpp:
+    complete
+    .text       start:0x0206af34 end:0x0206af4c
+
+src/ov127/func_ov127_0206b188.cpp:
+    complete
+    .text       start:0x0206b188 end:0x0206b19c
+
+src/ov127/func_ov127_0206b1d4.cpp:
+    complete
+    .text       start:0x0206b1d4 end:0x0206b1dc
+
+src/ov127/func_ov127_0206c158.cpp:
+    complete
+    .text       start:0x0206c158 end:0x0206c16c

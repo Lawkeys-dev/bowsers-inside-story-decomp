@@ -27,3 +27,47 @@ src/ov007/func_ov007_0211240c.cpp:
 src/ov007/func_ov007_02112420.cpp:
     complete
     .text       start:0x02112420 end:0x0211243c
+
+src/ov007/func_ov007_02110598.cpp:
+    complete
+    .text       start:0x02110598 end:0x021105ac
+
+src/ov007/func_ov007_02110914.cpp:
+    complete
+    .text       start:0x02110914 end:0x0211091c
+
+src/ov007/func_ov007_0211091c.cpp:
+    complete
+    .text       start:0x0211091c end:0x02110924
+
+src/ov007/func_ov007_02112254.cpp:
+    complete
+    .text       start:0x02112254 end:0x02112268
+
+src/ov007/func_ov007_02112268.cpp:
+    complete
+    .text       start:0x02112268 end:0x02112284
+
+src/ov007/func_ov007_0211257c.cpp:
+    complete
+    .text       start:0x0211257c end:0x02112584
+
+src/ov007/func_ov007_02112e74.cpp:
+    complete
+    .text       start:0x02112e74 end:0x02112e7c
+
+src/ov007/func_ov007_02113f70.cpp:
+    complete
+    .text       start:0x02113f70 end:0x02113f84
+
+src/ov007/func_ov007_02115a64.cpp:
+    complete
+    .text       start:0x02115a64 end:0x02115a6c
+
+src/ov007/func_ov007_02115b20.cpp:
+    complete
+    .text       start:0x02115b20 end:0x02115b28
+
+src/ov007/func_ov007_02115bec.cpp:
+    complete
+    .text       start:0x02115bec end:0x02115bf4

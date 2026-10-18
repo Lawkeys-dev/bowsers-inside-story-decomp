@@ -703,3 +703,43 @@ src/ov012/func_ov012_0207e3cc.cpp:
 src/ov012/func_ov012_0207e3d8.cpp:
     complete
     .text       start:0x0207e3d8 end:0x0207e3e4
+
+src/ov012/func_ov012_02074648.cpp:
+    complete
+    .text       start:0x02074648 end:0x0207465c
+
+src/ov012/func_ov012_0207465c.cpp:
+    complete
+    .text       start:0x0207465c end:0x02074670
+
+src/ov012/func_ov012_02078d9c.cpp:
+    complete
+    .text       start:0x02078d9c end:0x02078dac
+
+src/ov012/func_ov012_0207cc58.cpp:
+    complete
+    .text       start:0x0207cc58 end:0x0207cc60
+
+src/ov012/func_ov012_0207cc60.cpp:
+    complete
+    .text       start:0x0207cc60 end:0x0207cc68
+
+src/ov012/func_ov012_0207cc68.cpp:
+    complete
+    .text       start:0x0207cc68 end:0x0207cc70
+
+src/ov012/func_ov012_0207cc70.cpp:
+    complete
+    .text       start:0x0207cc70 end:0x0207cc78
+
+src/ov012/func_ov012_0207cc78.cpp:
+    complete
+    .text       start:0x0207cc78 end:0x0207cc80
+
+src/ov012/func_ov012_0207d1ec.cpp:
+    complete
+    .text       start:0x0207d1ec end:0x0207d1f4
+
+src/ov012/func_ov012_020856c4.cpp:
+    complete
+    .text       start:0x020856c4 end:0x020856d4
